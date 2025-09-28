@@ -1,42 +1,352 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/*About css*/
+
+.about-heading {
+  background-color: black;
+  color: white;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  font-family: fantasy;
+  width: 100%;
+}
+
+.about-heading h1 {
+  margin-top: -100px;
+}
+
+.row img {
+  margin-left: 51px;
+  margin-top: 160px;
+  height: 800px;
+}
+
+.about-head {
+  margin-top: 270px;
+  margin-left: 150px;
+  color: red;
+}
+
+.heading1 {
+  margin-top: 30px;
+  margin-left: 90px;
+  font-family: fantasy;
+  color: rgb(16, 16, 71);
+}
+
+.para1 {
+  margin-top: 40px;
+  margin-left: 90px;
+  font-weight: normal;
+}
+
+.para2 {
+  margin-top: 30px;
+  margin-left: 90px;
+  font-weight: lighter;
+}
+
+.button-wrapper {
+  margin-left: 100px;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  overflow: hidden;
+  color: white;
+  border-color: red;
+  background-color: red;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.button-wrapper:hover {
+  position: relative;
+  font-size: 19px;
+  cursor: pointer;
+  background-color: rgb(187, 73, 73);
+  color: white;
+  border: none;
+}
+
+.about-img1 img {
+  margin-left: -200px;
+  width: 840px;
+}
+
+.about-img2 img {
+  height: 387px;
+ width: 317px;
+  margin-left: -3px;
+}
+
+.about-img3 img {
+  height: 387px;
+  width: 317px;
+  margin-top: 24px;
+}
+
+.about-img4 img {
+  height: 387px;
+ width: 317px;
+  margin-left: -3px;
+}
+
+.about-img5 img {
+  height: 387px;
+  width: 317px;
+  margin-top: 24px;
+}
+
+.about-img6 img {
+  width: 460px;
+  height: 620px;
+  margin-left: 160px;
+}
+
+.hero-section {
+  margin-top: 270px;
+  margin-left: 50px;
+  color: red;
+}
+
+.hero-heading {
+  margin-top: 30px;
+  margin-left: -22px;
+  font-family: fantasy;
+  color: rgb(16, 16, 71);
+}
+
+.para3 {
+  margin-top: 60px;
+  margin-left: -22px;
+  font-weight: lighter;
+  color: rgb(16, 16, 71);
+}
+
+.hero-caption {
+  margin-top: 40px;
+  margin-left: -22px;
+  font-family: fantasy;
+}
+
+.hero-caption2 {
+  margin-left: 90px;
+  font-family: fantasy;
+  color: grey;
+  margin-top: -29px;
+}
+
+.section-title h5 {
+  color: red;
+  margin-top: 300px;
+  margin-left: 300px;
+}
+
+.section-title h1 {
+  color: rgb(10, 10, 57);
+  font-family: fantasy;
+  margin-top: 30px;
+  margin-left: 250px;
+}
+
+.team-img1 img {
+  height: 500px;
+  width: 350px;
+  margin-left: 140px;
+}
+
+.team-img2 img {
+  height: 500px;
+  width: 350px;
+  margin-left: 51px;
+}
+
+.team-img3 img {
+  height: 500px;
+  width: 350px;
+  margin-left: -37px;
+}
+
+.team-info h5 {
+  font-weight: 700;
+  color: rgb(171, 148, 148);
+  margin-top: -8px;
+  margin-left: 2px;
+ 
+}
+
+.team-info p {
+  color: gray;
+  font-weight: 200;
+  margin-top: -78px;
+ 
+}
+
+
+/*sevice css*/
+
+.service-heading {
+  background-color: black;
+  color: white;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  font-family: fantasy;
+}
+
+.section-subtitle {
+  color: red;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 145px;
+}
+
+.section-title {
+  font-weight: 800;
+  font-family: fantasy;
+  text-align: left;
+  color: #1a1a2e;
+  margin-top: 50px;
+}
+.service-title{
+  text-align: center;
+  margin-top: 20px;
+}
+.service-title:hover{
+  color: red;
+}
+.service-text{
+  text-align: center;
+  margin-top: 50px;
+}
+.btn-custom {
+  margin-left: 150px;
+  width: 200px;
+  height: 50px;
+  margin-top: -41px;
+  color: white;
+  border-color: red;
+  background-color: red;
+  font-size: 15px;
+  font-weight: lighter;
+  float: right;
+}
+
+.btn-custom:hover {
+  position: relative;
+  font-size: 19px;
+  cursor: pointer;
+  background-color: rgb(187, 73, 73);
+  color: white;
+  border: none;
+}
+
+.service-card {
+  background: white;
+  margin-left: 40px;
+  padding: 30px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  height: 300px;
+  width: 400px;
+
+}
+
+.service-card:hover {
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon:hover{
+  color: red;
+}
+
+/*footer css*/
+
+.footer-hero {
+  position: relative;
+  color: #d6d6d6;
+  background-color: black;
+}
+
+.footer-title {
+  color: #fff;
+  font-weight: 300;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: fantasy;
+}
+
+.footer-link {
+  color: #c9c9c9;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.brand-badge {
+  font-weight: 800;
+  color: #fff;
+}
+
+.brand-square {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.copyright {
+  color: #aaa;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 62px;
+
+}
+
+.para {
+  margin-left: -239px;
+  margin-top: 100px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.footer-head {
+  margin-top: -115px;
+  margin-left: -10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-logo {
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.footer-logo img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 120px;
+  margin-left: -50px;
+  margin-top: 21px;
 }
 
-.card {
-  padding: 2em;
+.footer-icon {
+  margin-left: 90px;
+  margin-top: -8px;
+  gap: 15px;
 }
 
-.read-the-docs {
-  color: #888;
-}
