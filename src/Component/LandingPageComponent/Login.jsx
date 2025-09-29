@@ -46,6 +46,7 @@ const Login = () => {
           <img src="login img.png" className="login-img" alt="login" />
         </div>
         <div className="col-sm-6">
+          
           <h2 className="login-text home2-para">
             <strong>FEEL FREE TO CONTACT</strong>
             <br />
@@ -53,10 +54,7 @@ const Login = () => {
               <strong>WITH US!</strong>
             </span>
           </h2>
-          <div className="row">
-            <div className="col-sm-4"></div>
-            <div className="col-sm-4 ">
-              
+            
               <form onSubmit={handleSubmit(handleLogic)}>
                 <input
                   type="text"
@@ -136,8 +134,10 @@ const Login = () => {
             </div>
             <div className="col-sm-4"></div>
           </div>
-        </div>
-      </div>
+      
+        
+            
+    
     </>
   );
 };
