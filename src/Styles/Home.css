@@ -1,0 +1,216 @@
+.navBtn {
+  font-size: 10px;
+  color: white !important;
+  /* background-color: black; */
+}
+
+
+.menu-item {
+  font-size: 20px;
+  color: black;
+}
+
+.nav-last-hover-button {
+  text-decoration: none !important;
+
+  background: #ff1313 !important;
+  border-radius: 0px !important;
+  margin-top: -1%;
+}
+
+.hover-button {
+  position: relative;
+  font-size: 18px;
+  background-color: transparent;
+  /* Let Bootstrap handle bg color */
+  color: white;
+  border: none;
+  z-index: 1;
+  overflow: hidden;
+  /* Ensure pseudo-element stays within bounds */
+}
+
+.hover-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: black;
+  ;
+  opacity: 0.4;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.hover-button:hover::before {
+  width: 100%;
+}
+
+.menu-item {
+  font-size: 17px;
+  display: flex;
+  gap: 15px;
+  margin-top: -140px;
+  color: black !important;
+
+}
+
+.navbar {
+  background-color: transparent !important;
+  height: 300px;
+
+}
+
+.btn-text {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.logo {
+  height: 170px;
+  width: 170px;
+  margin-top: -170px;
+}
+
+.logo-text {
+  margin-left: 160px;
+  margin-top: -130px;
+  font-size: 35px;
+  color: black;
+}
+
+/* }.cont-para{
+  font-size: 40px;
+  color:white;
+  position: relative;
+  left: 600px;
+  top: 100px;
+} */
+.map {
+  margin-left: 60px;
+  margin-top: 70px;
+  width: 600px;
+  height: 450px;
+}
+
+.address {
+  font-size: 14px;
+  margin-left: -60px;
+}
+
+.form {
+  margin-top: 70px;
+  margin-left: -50px;
+}
+
+.form2 {
+  margin-left: -50px;
+}
+
+.button {
+  border: 1px solid #f04e3c;
+  color: red;
+  width: 140px;
+  height: 50px;
+  font-size: 16px;
+  background-color: white;
+  margin-left: -50px;
+}
+
+.button:hover {
+  background-color: #f04e3c;
+  font: 16px;
+  color: white;
+
+}
+
+.address2 {
+  margin-left: -60px;
+}
+
+.home-icon {
+  margin-left: -100px;
+  margin-top: -110px;
+
+}
+
+.address-box {
+  margin-top: 60px;
+  gap: 150px;
+  margin-left: 30px;
+}
+
+.phone-icon {
+  margin-left: -100px;
+  margin-top: -110px;
+
+}
+
+.email-icon {
+  margin-left: -100px;
+  margin-top: -110px;
+
+}
+
+.img-conatainer {
+  background: url('/h1_hero.png');
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.hi {
+
+   
+   animation-delay: 0.4s;
+  color: white;
+  font-size: 65px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 200px;
+  margin-top: 50px;
+}.fitness{
+  font-size: 45px;
+  margin-top: -140px;
+  margin-left:  150px;
+}.home2-para{
+  font-size: 30px;
+  color: rgb(44, 35, 77);
+   text-align: center;
+     font-weight: 700;
+     margin-top: 20px;
+      
+}.home2-para2{
+  font-size: 30px;
+  color: rgb(44, 35, 77);
+  text-align: center;
+font-weight: 700;
+
+    
+     
+}.home2-h3{
+  
+    color: red;
+      text-align: center;
+        font-size: 15px;
+}.home2-box{
+  background-color: aqua;
+  height: 500px;
+  width: 300px;
+   
+}.home2-box2{
+  background-color: aqua;
+  height: 500px;
+  width: 300px;
+
+}.login-img{
+  height: 700px;
+  width: 700px;
+ margin-top: 60px;
+ margin-left: 30px;
+}

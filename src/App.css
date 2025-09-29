@@ -1,3 +1,7 @@
+
+body {
+  overflow-x: hidden !important;
+} 
 /*About css*/
 
 .about-heading {
@@ -348,5 +352,9 @@
   margin-left: 90px;
   margin-top: -8px;
   gap: 15px;
+}.login-img{
+  height: 700px;
+  width: 700px;
+ margin-top: 60px;
+ margin-left: 30px;
 }
-
