@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import Navbar from "./Navbar";
 // Reusable image component with hover effect
 const HoverImage = ({ src, alt, className }) => {
   return (
@@ -15,13 +15,15 @@ const HoverImage = ({ src, alt, className }) => {
 
 const About = () => {
   return (
-    <div className="container">
-      
+   
+    <>
+    <Navbar/>
+     <div className="container mt-1"> 
       <div className="row">
         <h1 className="about-heading">About Us</h1>
         <div className="col-sm-6">
           <HoverImage
-            src="https://themewagon.github.io/fitnessclub/assets/img/gallery/about.png"
+            src="about.png"
             alt="About"
             className="" // add your own classes here if needed
           />
@@ -48,7 +50,7 @@ const About = () => {
             Brook presents your services with flexible, convefnient and chient{" "}
             <br /> anipurpose layouts. You can select your favorite layouts.
           </p>
-          <button className="button-wrapper">BECOME A MEMBER</button>
+         
         </div>
       </div>
       
@@ -134,6 +136,7 @@ const About = () => {
       </div>
 
     </div>
+    </>
   );
 };
 
