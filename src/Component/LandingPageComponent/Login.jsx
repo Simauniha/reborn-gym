@@ -54,7 +54,7 @@ const Login = () => {
               <strong>WITH US!</strong>
             </span>
           </h2>
-            
+          
               <form onSubmit={handleSubmit(handleLogic)}>
                 <input
                   type="text"
@@ -131,9 +131,10 @@ const Login = () => {
                   className="form-control mb-2 btn btn-warning"
                 />
               </form>
+              </div>
             </div>
             <div className="col-sm-4"></div>
-          </div>
+     
       
         
             

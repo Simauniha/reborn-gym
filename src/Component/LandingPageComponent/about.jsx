@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
+import Footer from "./footer"
 // Reusable image component with hover effect
 const HoverImage = ({ src, alt, className }) => {
   return (
@@ -141,7 +142,7 @@ const About = () => {
         </div>
       </div>
 
-
+<Footer></Footer>
     </>
   );
 };

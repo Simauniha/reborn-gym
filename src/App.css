@@ -268,9 +268,12 @@ body {
 /*footer css*/
 
 .footer-hero {
-  position: relative;
-  color: #d6d6d6;
-  background-color: black;
+  background: url('/public/section_bg01.png');
+  height: 900px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .footer-title {
