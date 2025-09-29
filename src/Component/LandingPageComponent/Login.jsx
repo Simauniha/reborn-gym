@@ -2,7 +2,8 @@ import Navbar from "./Navbar";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-
+import axios from 'axios'
+import Swal from "sweetalert2";
 const Login = () => {
   const schema = yup.object({
     user_name: yup.string().required("Name is required"),
@@ -28,8 +29,24 @@ const Login = () => {
     resolver: yupResolver(schema),
   });
 
-  const handleLogic = (data) => {
-    console.log("✅ Form Data:", data);
+  const handleLogic = async(data) => {
+    // console.log("✅ Form Data:", data);
+   const result=await axios.post("http://localhost:8000/api/register",data);
+  //  console.log(result,":$^%$^%$%^&");
+  if(result.data.success){
+    Swal.fire({
+      icon:"success",
+      title:"Login ",
+      text  :result.data.message
+    })
+  }else{
+     Swal.fire({
+      icon:"error",
+      title:"Login ",
+      text  :result.data.message
+    })
+  }
+   
   };
 
   return (
