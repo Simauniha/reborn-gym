@@ -2,6 +2,7 @@ import React from "react";
 import { CiDumbbell } from "react-icons/ci";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { GiStopwatch } from "react-icons/gi";
+import Navbar from "./Navbar";
 
 const services = [
     {
@@ -38,36 +39,40 @@ const services = [
 
 function Services() {
     return (
-        <div className="container-fluid mt-5">
+        <>
+            <div className="service-div">
+                <div className="container-fluid mt-5">
+                    <Navbar />
+                    <h1 className="service-heading">Our Services</h1>
+                </div></div>
             <div className="row">
-                <h1 className="service-heading">Our Services</h1>
-            </div>
+                <p className="section-subtitle">OUR SERVICES FOR YOU</p>
+                <h1 className="section-title">
+                    PUSH YOUR LIMITS FORWARD <br /> WE OFFER TO YOU
+                </h1>
 
-            <p className="section-subtitle">OUR SERVICES FOR YOU</p>
-            <h1 className="section-title">
-                PUSH YOUR LIMITS FORWARD <br /> WE OFFER TO YOU
-            </h1>
+                <div className="btn-wrapper">
+                    <button className="btn-custom">MORE SERVICES</button>
+                </div>
 
-            <div className="btn-wrapper">
-                <button className="btn-custom">MORE SERVICES</button>
-            </div>
-
-            <div className="row mt-5">
-                {services.map((service, index) => (
-                    <div className="col-sm-4 mb-4" key={index}>
-                        <div className="service-card">
-                            <div className="row d-flex align-items-center justify-content-center py-3">
-                                {service.icon} 
+                <div className="row mt-5">
+                    {services.map((service, index) => (
+                        <div className="col-sm-4 mb-4" key={index}>
+                            <div className="service-card">
+                                <div className="row d-flex align-items-center justify-content-center py-3">
+                                    {service.icon}
+                                </div>
+                                <h5 className="service-title">{service.title}</h5>
+                                <p className="service-text">{service.text}</p>
                             </div>
-                            <h5 className="service-title">{service.title}</h5>
-                            <p className="service-text">{service.text}</p>
                         </div>
-                    </div>
 
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
-    );
+
+        </>)
 }
+
 
 export default Services;
