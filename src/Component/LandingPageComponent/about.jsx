@@ -7,7 +7,7 @@ const HoverImage = ({ src, alt, className }) => {
     <motion.img
       src={src}
       alt={alt}
-       whileHover={{ scale: 1.02 }}  // subtle zoom
+      whileHover={{ scale: 1.02 }}  // subtle zoom
       transition={{ duration: 0.3 }}
     />
   );
@@ -15,12 +15,18 @@ const HoverImage = ({ src, alt, className }) => {
 
 const About = () => {
   return (
-   
+
     <>
-    <Navbar/>
-     <div className="container mt-1"> 
+      <div className="bg-dark">
+        <Navbar />
+        <div className="container-fluid mt-1">
+          <h1 className="about-heading">About Us</h1>
+        </div>
+      </div>
+
+
       <div className="row">
-        <h1 className="about-heading">About Us</h1>
+
         <div className="col-sm-6">
           <HoverImage
             src="about.png"
@@ -50,10 +56,10 @@ const About = () => {
             Brook presents your services with flexible, convefnient and chient{" "}
             <br /> anipurpose layouts. You can select your favorite layouts.
           </p>
-         
+
         </div>
       </div>
-      
+
       <div className="row">
         <div className="col-sm-6">
           <div className="about-img1">
@@ -135,7 +141,7 @@ const About = () => {
         </div>
       </div>
 
-    </div>
+
     </>
   );
 };

@@ -9,6 +9,7 @@ const Navbar = () => {
         <Link className="navbar-brand" to="/">
           <img src="./rebprn.jpg" className="logo" alt="logo" />
           <p className="fitness">FITNESS</p>
+                
         </Link>
 
         <button
@@ -73,7 +74,9 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      
     </nav>
+   
   );
 };
 
