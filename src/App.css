@@ -371,4 +371,8 @@ body {
   
    font-weight: 700;
    margin-left: -300px;
+}.div-about{
+  background-color: black;
+}.collapse{
+  margin-top: 52px;
 }

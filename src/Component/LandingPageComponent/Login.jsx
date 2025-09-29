@@ -34,7 +34,13 @@ const Login = () => {
 
   return (
     <>
-      <Navbar />
+     
+          <div className="div-about">
+        <Navbar />
+        <div className="container-fluid mt-1">
+          <h1 className="about-heading">New Member</h1>
+        </div>
+      </div>
       <div className="row">
         <div className="col-sm-6">
           <img src="login img.png" className="login-img" alt="login" />
@@ -49,10 +55,8 @@ const Login = () => {
           </h2>
           <div className="row">
             <div className="col-sm-4"></div>
-            <div className="col-sm-4">
-              <h1 className="text-center text-danger mt-2">
-                Form Validation
-              </h1>
+            <div className="col-sm-4 ">
+              
               <form onSubmit={handleSubmit(handleLogic)}>
                 <input
                   type="text"
