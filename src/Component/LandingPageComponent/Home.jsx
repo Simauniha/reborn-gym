@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../Styles/Home.css";
+import About from "./about"
 const Home = () => {
   return (
     <>
+   
       <div className="img-conatainer">
         <nav className="navbar navbar-expand-lg navbar-dark py-3 px-100">
           <div className="container-fluid">
@@ -24,7 +26,7 @@ const Home = () => {
               <span className="navbar-toggler-icon" />
             </button>
 
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className="collapse navbar-collapse " id="navbarNav" >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 menu-item">
                 <li className="nav-item">
                   <Link className="nav-link active" to="/">
@@ -42,8 +44,14 @@ const Home = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/portfolio">
-                    <strong>Portfolio</strong>
+                  <Link className="nav-link" to="/Schedule">
+                    <strong>Schedule</strong>
+                  </Link>
+                </li>
+
+                  <li className="nav-item">
+                  <Link className="nav-link" to="/Gallery">
+                    <strong>Gallery</strong>
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -94,6 +102,7 @@ const Home = () => {
           <div className="col-sm-6"></div>
         </div>
       </div>
+       <About></About>
     </>
   );
 };

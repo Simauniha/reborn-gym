@@ -7,7 +7,8 @@ body {
 .about-heading {
   background-color: black;
   color: white;
-  height: 400px;
+  height: 300px;
+ 
   text-align: center;
   align-items: center;
   display: grid;
@@ -355,6 +356,23 @@ body {
 }.login-img{
   height: 700px;
   width: 700px;
- margin-top: 60px;
- margin-left: 30px;
+ margin-top: 100px !important;
+ margin-left: 0px !important;
+}.home2-para{
+  font-size: 45px;
+  color: rgb(44, 35, 77);
+   text-align: center;
+     font-weight: 700;
+     margin-top: 180px;
+     margin-left: -220px;
+}.span-para{
+   font-size: 45px;
+  color: rgb(44, 35, 77);
+  
+   font-weight: 700;
+   margin-left: -300px;
+}.div-about{
+  background-color: black;
+}.collapse{
+  margin-top: 52px;
 }
