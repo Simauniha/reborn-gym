@@ -1,11 +1,7 @@
-const login= ()=>{
+ 
+ const login= ()=>{
  return(
-
-
 <>
-
-
-
 <div className="row">
     <div className="col-sm-6">
         <img src="login img.png " className="login-img"></img>
