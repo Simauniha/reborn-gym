@@ -7,6 +7,7 @@ import Footer from "./Component/LandingPageComponent/footer";
 import Home from "./Component/LandingPageComponent/Home";
 import "bootstrap/dist/js/bootstrap.bundle.js"
 import "bootstrap/dist/css/bootstrap.min.css";
+import Membership from "./Component/LandingPageComponent/membership"
 import "./App.css";
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/footer" element={<Footer />} />
+            <Route path="/membership" element={<Membership/>} />
         </Routes>
       </Router>
     </>
