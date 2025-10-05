@@ -12,6 +12,7 @@
 
 .nav-last-hover-button {
   text-decoration: none !important;
+height: 60px;
 
   background: #ff1313 !important;
   border-radius: 0px !important;
@@ -52,14 +53,14 @@
   font-size: 17px;
   display: flex;
   gap: 15px;
-  margin-top: -140px;
+  margin-top: 20px;
   color: black !important;
 
 }
 
 .navbar {
   background-color: transparent !important;
-  height: 300px;
+  height: 100px;
 
 }
 
@@ -72,12 +73,12 @@
 .logo {
   height: 170px;
   width: 170px;
-  margin-top: -170px;
+  margin-top: 10px;
 }
 
 .logo-text {
   margin-left: 160px;
-  margin-top: -130px;
+  margin-top: -10px;
   font-size: 35px;
   color: black;
 }
@@ -173,10 +174,10 @@
   font-size: 65px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-left: 200px;
-  margin-top: 50px;
+  margin-top: 272px;
 }.fitness{
   font-size: 45px;
-  margin-top: -140px;
+  margin-top: -115px;
   margin-left:  150px;
 }.home2-para{
   font-size: 30px;

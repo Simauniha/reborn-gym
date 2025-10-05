@@ -9,6 +9,7 @@ const Navbar = () => {
         <Link className="navbar-brand" to="/">
           <img src="./rebprn.jpg" className="logo" alt="logo" />
           <p className="fitness">FITNESS</p>
+                
         </Link>
 
         <button
@@ -41,8 +42,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/portfolio">
-                <strong>Portfolio</strong>
+              <Link className="nav-link" to="/Schedule">
+                <strong>Schedule</strong>
+              </Link></li>
+                <li className="nav-item">
+              <Link className="nav-link" to="/Gallery">
+                <strong>Gallery</strong>
               </Link>
             </li>
             <li className="nav-item">
@@ -73,7 +78,9 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      
     </nav>
+   
   );
 };
 

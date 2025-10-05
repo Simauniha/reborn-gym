@@ -1,17 +1,18 @@
-
 body {
   overflow-x: hidden !important;
-} 
+}
+
 /*About css*/
 
 .about-heading {
   background-color: black;
   color: white;
-  height: 400px;
+  height: 300px;
+
   text-align: center;
   align-items: center;
   display: grid;
-  font-family: fantasy;
+
   width: 100%;
 }
 
@@ -79,7 +80,7 @@ body {
 
 .about-img2 img {
   height: 387px;
- width: 317px;
+  width: 317px;
   margin-left: -3px;
 }
 
@@ -91,7 +92,7 @@ body {
 
 .about-img4 img {
   height: 387px;
- width: 317px;
+  width: 317px;
   margin-left: -3px;
 }
 
@@ -170,20 +171,21 @@ body {
   width: 350px;
   margin-left: -37px;
 }
+
 /* //flgfl */
 .team-info h5 {
   font-weight: 700;
   color: rgb(171, 148, 148);
   margin-top: -8px;
   margin-left: 2px;
- 
+
 }
 
 .team-info p {
   color: gray;
   font-weight: 200;
   margin-top: -78px;
- 
+
 }
 
 
@@ -213,17 +215,21 @@ body {
   color: #1a1a2e;
   margin-top: 50px;
 }
-.service-title{
+
+.service-title {
   text-align: center;
   margin-top: 20px;
 }
-.service-title:hover{
+
+.service-title:hover {
   color: red;
 }
-.service-text{
+
+.service-text {
   text-align: center;
   margin-top: 50px;
 }
+
 .btn-custom {
   margin-left: 150px;
   width: 200px;
@@ -260,16 +266,19 @@ body {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
 }
 
-.service-icon:hover{
+.service-icon:hover {
   color: red;
 }
 
 /*footer css*/
 
 .footer-hero {
-  position: relative;
-  color: #d6d6d6;
-  background-color: black;
+  background: url('/public/section_bg01.png');
+  height: 900px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .footer-title {
@@ -352,9 +361,46 @@ body {
   margin-left: 90px;
   margin-top: -8px;
   gap: 15px;
-}.login-img{
+}
+
+.login-img {
   height: 700px;
   width: 700px;
- margin-top: 60px;
- margin-left: 30px;
+  margin-top: 100px !important;
+  margin-left: 0px !important;
 }
+
+.home2-para {
+  font-size: 45px;
+  color: rgb(44, 35, 77);
+  text-align: center;
+  font-weight: 700;
+  margin-top: 180px;
+  margin-left: -220px;
+}
+
+.span-para {
+  font-size: 45px;
+  color: rgb(44, 35, 77);
+
+  font-weight: 700;
+  margin-left: -300px;
+}
+
+.div-about {
+  background-color: black;
+}
+
+.collapse {
+  margin-top: 52px;
+}
+
+.user-name {
+  display: flex;
+  margin-top: 35px;
+   border: 0px !important;
+   border-bottom: 2px solid  rgb(197, 190, 224) !important; 
+   gap: 40px !important;
+}
+
+
