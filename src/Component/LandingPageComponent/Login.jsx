@@ -2,7 +2,8 @@ import Navbar from "./Navbar";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-
+import axios from 'axios'
+import Swal from "sweetalert2";
 const Login = () => {
   const schema = yup.object({
     user_name: yup.string().required("Name is required"),
@@ -28,8 +29,24 @@ const Login = () => {
     resolver: yupResolver(schema),
   });
 
-  const handleLogic = (data) => {
-    console.log("✅ Form Data:", data);
+  const handleLogic = async(data) => {
+    // console.log("✅ Form Data:", data);
+   const result=await axios.post("http://localhost:8000/api/register",data);
+  //  console.log(result,":$^%$^%$%^&");
+  if(result.data.success){
+    Swal.fire({
+      icon:"success",
+      title:"Login ",
+      text  :result.data.message
+    })
+  }else{
+     Swal.fire({
+      icon:"error",
+      title:"Login ",
+      text  :result.data.message
+    })
+  }
+   
   };
 
   return (
@@ -54,23 +71,27 @@ const Login = () => {
               <strong>WITH US!</strong>
             </span>
           </h2>
-            
+          
+          <div className="row">
+              
+            <div className="col-sm-10">
+
               <form onSubmit={handleSubmit(handleLogic)}>
                 <input
                   type="text"
                   {...register("user_name")}
                   placeholder="Enter Your Name"
-                  className="form-control mb-2 mt-2"
+                  className="form-control user-name"
                 />
                 {errors.user_name && (
-                  <p className="text-danger">{errors.user_name.message}</p>
+                  <p className="text-danger ">{errors.user_name.message}</p>
                 )}
 
                 <input
                   type="email"
                   {...register("user_email")}
                   placeholder="Enter Your Email"
-                  className="form-control mb-2"
+                  className="form-control user-name"
                 />
                 {errors.user_email && (
                   <p className="text-danger">{errors.user_email.message}</p>
@@ -80,17 +101,17 @@ const Login = () => {
                   type="password"
                   {...register("user_password")}
                   placeholder="Enter Your Password"
-                  className="form-control mb-2"
+                  className="form-control user-name"
                 />
                 {errors.user_password && (
                   <p className="text-danger">{errors.user_password.message}</p>
                 )}
-
+ 
                 <input
                   type="text"
                   {...register("user_phone")}
                   placeholder="Enter Your Phone"
-                  className="form-control mb-2"
+                  className=" form-control user-name"
                 />
                 {errors.user_phone && (
                   <p className="text-danger">{errors.user_phone.message}</p>
@@ -100,7 +121,7 @@ const Login = () => {
                   type="number"
                   {...register("user_age")}
                   placeholder="Enter Your Age"
-                  className="form-control mb-2"
+                  className=" form-control user-name "
                 />
                 {errors.user_age && (
                   <p className="text-danger">{errors.user_age.message}</p>
@@ -110,7 +131,7 @@ const Login = () => {
                   type="text"
                   {...register("user_height")}
                   placeholder="Enter Your Height"
-                  className="form-control mb-2"
+                  className=" user-name form-control d-flex"
                 />
                 {errors.user_height && (
                   <p className="text-danger">{errors.user_height.message}</p>
@@ -120,7 +141,7 @@ const Login = () => {
                   type="text"
                   {...register("user_weight")}
                   placeholder="Enter Your Weight"
-                  className="form-control mb-2"
+                  className="user-name  form-control d-flex"
                 />
                 {errors.user_weight && (
                   <p className="text-danger">{errors.user_weight.message}</p>
@@ -128,12 +149,16 @@ const Login = () => {
 
                 <input
                   type="submit"
-                  className="form-control mb-2 btn btn-warning"
+                  className="mb-2 user-name   btn btn-warning"
                 />
               </form>
+               <div className="col-sm-2"></div>
+              </div>
+              </div>
+              </div>
             </div>
             <div className="col-sm-4"></div>
-          </div>
+     
       
         
             
