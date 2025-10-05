@@ -94,7 +94,7 @@ const Footer = () => {
 
           <div>
             <div className="footer-logo">
-              <img src="../../public/images/reborn.jpg" alt="logo" />
+           
               <h1 className="footer-head">FITNESS</h1>
             
             <p className="para">

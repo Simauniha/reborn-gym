@@ -40,11 +40,12 @@ const services = [
 function Services() {
     return (
         <>
-            <div className="service-div">
-                <div className="container-fluid mt-5">
-                    <Navbar />
-                    <h1 className="service-heading">Our Services</h1>
-                </div></div>
+         <div className="div-about">
+        <Navbar />
+        <div className="container-fluid mt-1">
+          <h1 className="about-heading">Our Services</h1>
+        </div>
+      </div>
             <div className="row">
                 <p className="section-subtitle">OUR SERVICES FOR YOU</p>
                 <h1 className="section-title">

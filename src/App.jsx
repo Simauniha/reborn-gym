@@ -10,6 +10,9 @@ import "bootstrap/dist/js/bootstrap.bundle.js"
 import "bootstrap/dist/css/bootstrap.min.css";
 // import Membership from "./Component/LandingPageComponent/membership"
 import Login from "./Component/LandingPageComponent/Login";
+import Schedule from "./Component/LandingPageComponent/Schedule";
+import Contact from "./Component/LandingPageComponent/Contact"
+import Home1 from "./Component/LandingPageComponent/Home1"
 import "./App.css";   //dfyfdg
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="/footer" element={<Footer />} />
           <Route path="/membership" element={<Login />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/Schedule" element={<Schedule/>} />
+          <Route path="/Contact" element={<Contact/>} />
+           <Route path="/Home1" element={<Home1/>} />
         </Routes>
       </Router>
     </>
