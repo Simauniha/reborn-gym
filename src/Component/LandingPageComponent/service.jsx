@@ -3,6 +3,7 @@ import { CiDumbbell } from "react-icons/ci";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { GiStopwatch } from "react-icons/gi";
 import Navbar from "./Navbar";
+import Footer from "./footer"
 
 const services = [
     {
@@ -47,14 +48,18 @@ function Services() {
         </div>
       </div>
             <div className="row">
-                <p className="section-subtitle">OUR SERVICES FOR YOU</p>
+                <div className="col-sm-2"></div>
+                <div className="col-sm-4"> <p className="section-subtitle">OUR SERVICES FOR YOU</p>
                 <h1 className="section-title">
                     PUSH YOUR LIMITS FORWARD <br /> WE OFFER TO YOU
-                </h1>
-
+                </h1></div>
+                <div className="col-sm-4">
                 <div className="btn-wrapper">
                     <button className="btn-custom">MORE SERVICES</button>
-                </div>
+                </div></div>
+                <div className="col-sm-2"></div>
+               
+
 
                 <div className="row mt-5">
                     {services.map((service, index) => (
@@ -71,7 +76,7 @@ function Services() {
                     ))}
                 </div>
             </div>
-
+<Footer></Footer>
         </>)
 }
 
