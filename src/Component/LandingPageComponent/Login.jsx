@@ -47,7 +47,7 @@ const Login = () => {
             });
             console.error("Login Error:", err);
         }
-        console.log("Form submitted ✅", data)
+        
     };
 
 
