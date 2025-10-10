@@ -4,6 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from 'axios'
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 const Login = () => {
   const schema = yup.object({
     user_name: yup.string().required("Name is required"),
@@ -29,30 +30,30 @@ const Login = () => {
     resolver: yupResolver(schema),
   });
 
-  const handleLogic = async(data) => {
+  const handleLogic = async (data) => {
     // console.log("✅ Form Data:", data);
-   const result=await axios.post("http://localhost:8000/api/register",data);
-  //  console.log(result,":$^%$^%$%^&");
-  if(result.data.success){
-    Swal.fire({
-      icon:"success",
-      title:"Login ",
-      text  :result.data.message
-    })
-  }else{
-     Swal.fire({
-      icon:"error",
-      title:"Login ",
-      text  :result.data.message
-    })
-  }
-   
+    const result = await axios.post("http://localhost:8000/api/register", data);
+    //  console.log(result,":$^%$^%$%^&");
+    if (result.data.success) {
+      Swal.fire({
+        icon: "success",
+        title: "Registered Successfully ",
+        text: result.data.message
+      })
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Registered Unsuccessfully ",
+        text: result.data.message
+      })
+    }
+
   };
 
   return (
     <>
-     
-          <div className="div-about">
+
+      <div className="div-about">
         <Navbar />
         <div className="container-fluid mt-1">
           <h1 className="about-heading">New Member</h1>
@@ -63,7 +64,7 @@ const Login = () => {
           <img src="login img.png" className="login-img" alt="login" />
         </div>
         <div className="col-sm-6">
-          
+
           <h2 className="login-text home2-para">
             <strong>FEEL FREE TO CONTACT</strong>
             <br />
@@ -71,9 +72,9 @@ const Login = () => {
               <strong>WITH US!</strong>
             </span>
           </h2>
-          
+
           <div className="row">
-              
+
             <div className="col-sm-10">
 
               <form onSubmit={handleSubmit(handleLogic)}>
@@ -106,7 +107,7 @@ const Login = () => {
                 {errors.user_password && (
                   <p className="text-danger">{errors.user_password.message}</p>
                 )}
- 
+
                 <input
                   type="text"
                   {...register("user_phone")}
@@ -152,17 +153,22 @@ const Login = () => {
                   className="mb-2 user-name   btn btn-warning"
                 />
               </form>
-               <div className="col-sm-2"></div>
-              </div>
-              </div>
+              <div className="col-sm-2">
+                <p>already a member</p>
+                <Link className="nav-link" to="/login">
+                  <strong>Login</strong>
+                </Link>
               </div>
             </div>
-            <div className="col-sm-4"></div>
-     
-      
-        
-            
-    
+          </div>
+        </div>
+      </div>
+      <div className="col-sm-4"></div>
+
+
+
+
+
     </>
   );
 };
