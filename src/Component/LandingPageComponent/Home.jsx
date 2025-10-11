@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../Styles/Home.css";
-import About from "./about"
+import Home1 from "./Home1"
 const Home = () => {
   return (
     <>
@@ -102,7 +102,7 @@ const Home = () => {
           <div className="col-sm-6"></div>
         </div>
       </div>
-       <About></About>
+<Home1></Home1>
     </>
   );
 };
