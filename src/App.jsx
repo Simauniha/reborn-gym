@@ -15,6 +15,9 @@ import Schedule from "./Component/LandingPageComponent/Schedule";
 import Contact from "./Component/LandingPageComponent/Contact"
 import Home1 from "./Component/LandingPageComponent/Home1"
 import NotFound from "./Component/LandingPageComponent/NotFound";
+import UserDashboard from "./Component/UserPageComponent/UserDashBoard/UserDashboard.jsx";
+import AdminDashboard from "./Component/AdminPageComponent/AdminDashboard/AdminDashboard.jsx";
+
 
 function App() {
   const location = useLocation()
@@ -40,16 +43,12 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         {/* {User Route} */}
-        {userData?.userType == "user" && <>
-          <Route path="/userDashboard" element={<UserDashboard />} />
-        </>}
+        <Route path="/userDashboard/*" element={<UserDashboard />} />
 
         {/* {Admin Route} */}
-        {userData?.userType == "admin" && <>
-          <Route path="/adminDashboard" element={<AdminDashboard />} />
-        </>}
+        <Route path="/adminDashboard/*" element={<AdminDashboard />} />
 
-        <Route path="*" element={<NotFound/>} />
+        {/* <Route path="*" element={<NotFound />} /> */}
 
       </Routes>
     </>
