@@ -104,7 +104,7 @@ const Login = () => {
                             </form>
                             <div className="col-sm-2">
                                 <p className="text-warning">not a member</p>
-                                <Link className="nav-link" to="/membership">
+                                <Link className="nav-link" to="/register">
                                     <strong className="text-warning">Register</strong>
                                 </Link>
                             </div>
@@ -113,11 +113,6 @@ const Login = () => {
                 </div>
             </div>
             <div className="col-sm-4"></div>
-
-
-
-
-
         </>
     );
 };
