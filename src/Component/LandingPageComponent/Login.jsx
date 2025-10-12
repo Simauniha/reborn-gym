@@ -4,8 +4,11 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from 'axios'
 import Swal from "sweetalert2";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
+
 const Login = () => {
+    const Navigate=useNavigate()
+
     const schema = yup.object({
         user_email: yup
             .string()
@@ -32,6 +35,7 @@ const Login = () => {
                     title: "Login Successfully",
                     text: result.data.message,
                 });
+                Navigate("/")
             } else {
                 Swal.fire({
                     icon: "error",
