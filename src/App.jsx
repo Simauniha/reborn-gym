@@ -19,7 +19,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Router>
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -33,7 +33,7 @@ function App() {
           <Route path="/login" element={<Login />} />
            <Route path="/Gallery" element={<Gallery/>} />
         </Routes>
-      </Router>
+     
     </>
   );
 }
