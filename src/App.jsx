@@ -6,6 +6,7 @@ import Service from "./Component/LandingPageComponent/service";
 import Footer from "./Component/LandingPageComponent/footer";
 import Home from "./Component/LandingPageComponent/Home";
 import Blog from "./Component/LandingPageComponent/Blog";
+import Gallery from "./Component/LandingPageComponent/Gallery";
 import "bootstrap/dist/js/bootstrap.bundle.js"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Register from "./Component/LandingPageComponent/Register";
@@ -14,7 +15,7 @@ import Login from "./Component/LandingPageComponent/Login";
 import Schedule from "./Component/LandingPageComponent/Schedule";
 import Contact from "./Component/LandingPageComponent/Contact"
 import Home1 from "./Component/LandingPageComponent/Home1"
-import "./App.css";   //dfyfdg
+import "./App.css";   
 function App() {
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
           <Route path="/Contact" element={<Contact/>} />
            <Route path="/Home1" element={<Home1/>} />
           <Route path="/login" element={<Login />} />
+           <Route path="/Gallery" element={<Gallery/>} />
         </Routes>
       </Router>
     </>

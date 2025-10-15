@@ -74,30 +74,30 @@ body {
 
 .about-img1 img {
   margin-left: -200px;
-  width: 840px;
+  width: 940px;
 }
 
 .about-img2 img {
   height: 387px;
-  width: 317px;
+  width: 357px;
   margin-left: -3px;
 }
 
 .about-img3 img {
   height: 387px;
-  width: 317px;
+  width: 357px;
   margin-top: 24px;
 }
 
 .about-img4 img {
   height: 387px;
-  width: 317px;
+  width: 347px;
   margin-left: -3px;
 }
 
 .about-img5 img {
   height: 387px;
-  width: 317px;
+  width: 347px;
   margin-top: 24px;
 }
 
@@ -139,7 +139,7 @@ body {
 
 .section-title h5 {
   color: red;
-  margin-top: 300px;
+  margin-top: 140px;
   margin-left: 300px;
 }
 
@@ -153,26 +153,28 @@ body {
   height: 500px;
   width: 350px;
   margin-left: 140px;
+  margin-top: 70px;
 }
 
 .team-img2 img {
   height: 500px;
   width: 350px;
   margin-left: 51px;
+ margin-top: 70px;
 }
 
 .team-img3 img {
   height: 500px;
   width: 350px;
   margin-left: -37px;
+ margin-top: 70px;
 }
 
-/* //flgfl */
 .team-info h5 {
   font-weight: 700;
   color: rgb(171, 148, 148);
   margin-top: -8px;
-  margin-left: 2px;
+  margin-left: 150px;
 
 }
 
@@ -180,6 +182,7 @@ body {
   color: gray;
   font-weight: 200;
   margin-top: -78px;
+  margin-left: 150px;
 
 }
 
@@ -265,15 +268,82 @@ body {
   color: red;
 }
 
+
+/*Schedule css*/
+
+.days-nav {
+  background: #f4fbff;
+  text-align: center;
+}
+.days-nav .nav-link {
+  font-weight: 700;
+  color: #16163f;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.days-nav .nav-link.active {
+  background: #ff1d1d;
+  color: #fff !important;
+  border-radius: 0;
+}
+
+/* Schedule Cards */
+.schedule-card {
+  background: #f4fbff;
+  border: none;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: 0.3s;
+}
+.schedule-card:hover {
+  background: #ff1d1d;
+  color: #fff;
+}
+.time:hover {
+  background-color: #fff;
+}
+.schedule-card.active {
+  background: #ff1d1d;
+  color: #fff;
+}
+.schedule-card .time {
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.schedule-card.active .time {
+  background: #fff;
+  color: #000;
+}
+.schedule-card h5 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.schedule-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #7a7a9d;
+}
+.schedule-card.active p {
+  color: #fff;
+}
+
+
 /*footer css*/
 
 .footer-hero {
   background: url('/public/section_bg01.png');
-  height: 900px;
+  height: 700px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin-top: 50px;
 }
 
 .footer-title {
@@ -598,4 +668,5 @@ body {
   color: #fff;
 }
 
+/*Gallery Css*/
 
