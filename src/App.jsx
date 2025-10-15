@@ -15,7 +15,7 @@ import Login from "./Component/LandingPageComponent/Login";
 import Schedule from "./Component/LandingPageComponent/Schedule";
 import Contact from "./Component/LandingPageComponent/Contact"
 import Home1 from "./Component/LandingPageComponent/Home1"
-import "./App.css";   
+import "./App.css";  
 function App() {
   return (
     <>
