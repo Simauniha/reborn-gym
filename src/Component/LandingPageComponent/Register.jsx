@@ -5,6 +5,7 @@ import * as yup from "yup";
 import axios from 'axios'
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 const Register = () => {
   const schema = yup.object({
     user_name: yup.string().required("Name is required"),
@@ -60,13 +61,14 @@ const Register = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-sm-1"></div>
+        <div className="col-sm-5">
           <img src="login img.png" className="login-img" alt="login" />
         </div>
-        <div className="col-sm-6">
+        <div className="col-sm-5">
 
           <h2 className="login-text home2-para">
-            <strong>ENTER DETAILS TO LOGIN</strong>
+            <strong>ENTER DETAILS TO REGISTER</strong>
             <br />
           </h2>
 
@@ -150,20 +152,25 @@ const Register = () => {
                   className="mb-2 user-name   btn btn-warning"
                 />
               </form>
-              <div className="col-sm-2">
-                <p>already a member</p>
+              <div >
+                <p>Already A Member</p>
                 <Link className="nav-link" to="/login">
                   <strong>Login</strong>
                 </Link>
               </div>
             </div>
+
+            <div className="col-sm-2"></div>
           </div>
         </div>
       </div>
-      <div className="col-sm-4"></div>
+
+      <div className="col-sm-1"></div>
 
 
-
+      <div>
+        <Footer />
+      </div>
 
 
     </>

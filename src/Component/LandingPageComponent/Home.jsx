@@ -5,7 +5,7 @@ import Home1 from "./Home1"
 const Home = () => {
   return (
     <>
-   
+
       <div className="img-conatainer">
         <nav className="navbar navbar-expand-lg navbar-dark py-3 px-100">
           <div className="container-fluid">
@@ -49,7 +49,7 @@ const Home = () => {
                   </Link>
                 </li>
 
-                  <li className="nav-item">
+                <li className="nav-item">
                   <Link className="nav-link" to="/Gallery">
                     <strong>Gallery</strong>
                   </Link>
@@ -64,7 +64,7 @@ const Home = () => {
                     <strong>Blog</strong>
                   </Link>
                 </li>
-              
+
 
                 {/* Read More button at end */}
                 <li className="nav-item ms-3">
@@ -98,7 +98,7 @@ const Home = () => {
           <div className="col-sm-6"></div>
         </div>
       </div>
-<Home1></Home1>
+      <Home1></Home1>
     </>
   );
 };

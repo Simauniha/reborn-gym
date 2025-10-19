@@ -1,19 +1,27 @@
-import AboutGym from "./AboutGym";
-import Feedback from "./Feedback";
+import Navbar from "./Navbar";
 import Footer from "./Footer"
-import GalleryImage from "./GalleryImage";
-import HoverImage from './HoverImage'
 import Trainer from "./Trainer";
+import HoverImage from "./HoverImage";
+import GalleryImage from "./GalleryImage";
+import AboutGym from "./AboutGym";
 
-const Home1 = () => {
+const About = () => {
   return (
+
     <>
+      <div className="div-about">
+        <Navbar />
+        <div className="container-fluid mt-1">
+          <h1 className="about-heading">About Us</h1>
+        </div>
+      </div>
+
 
       <AboutGym/>
 
-      <GalleryImage />
+      <GalleryImage/>
 
-      {/* <div className="row">
+      <div className="row">
         <div className="col-sm-6 about-img6">
           <HoverImage src="/images/about2.png" alt="" />
         </div>
@@ -34,9 +42,7 @@ const Home1 = () => {
           <h5 className="hero-caption">JOHN SMITH</h5>
           <h6 className="hero-caption2">Gym Trainer</h6>
         </div>
-      </div> */}
-
-      <Feedback/>
+      </div>
 
       <Trainer />
 
@@ -45,4 +51,4 @@ const Home1 = () => {
   );
 };
 
-export default Home1;
+export default About;

@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./footer"
+import Footer from "./Footer"
 import Navbar from "./Navbar";
 function Blog() {
   return (
@@ -10,7 +10,7 @@ function Blog() {
           <h1 className="about-heading">Our Blog</h1>
         </div>
       </div>
-    <div>
+      <div>
         <div className="row">
           <div className="col-md-8">
             <div className="card border-0 shadow-sm">
@@ -265,6 +265,7 @@ function Blog() {
           </div>
         </div>
       </div>
+
       <Footer/>
     </>
   );

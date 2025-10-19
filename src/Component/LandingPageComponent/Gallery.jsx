@@ -1,6 +1,8 @@
+import GalleryImage from "./GalleryImage";
 import Navbar from "./Navbar";
-import Footer from "./footer"
-const Gallery = ()=>{
+import Trainer from "./Trainer";
+import Footer from "./Footer"
+const Gallery = () => {
   return (
 
     <>
@@ -11,7 +13,9 @@ const Gallery = ()=>{
         </div>
       </div>
 
-      
+      <GalleryImage/>
+
+      <Trainer/>
 
       <Footer></Footer>
     </>
