@@ -1,17 +1,16 @@
 import React from "react";
-
-
+import Footer from "./footer"
+import Navbar from "./Navbar";
 function Blog() {
   return (
+    <>
+     <div className="div-about">
+        <Navbar />
+        <div className="container-fluid mt-1">
+          <h1 className="about-heading">Our Blog</h1>
+        </div>
+      </div>
     <div>
-      
-      <div className="container-fluid">
-        <div className="row">
-         <div className="col-12">
-          <h1 className="blog-heading">Blog</h1>
-        </div>
-        </div>
-        
         <div className="row">
           <div className="col-md-8">
             <div className="card border-0 shadow-sm">
@@ -26,7 +25,7 @@ function Blog() {
                   <small>Jan</small>
                 </div>
               </div>
-              <div className="card-body mt-4">
+              <div className="card-body ">
                 <h5 className="card-title fw-bold">
                   Google inks pact for new 35-storey office
                 </h5>
@@ -103,7 +102,7 @@ function Blog() {
                   <small>Jan</small>
                 </div>
               </div>
-              <div className="card-body mt-4">
+              <div className="card-body ">
                 <h5 className="card-title">
                   Google inks pact for new 35-storey office
                 </h5>
@@ -176,7 +175,7 @@ function Blog() {
       </div>
 
       
-      <div className="container my-5">
+      <div className="container ">
         <div className="row">
           <div className="col-md-8">
             <div className="card border-0 shadow-sm">
@@ -266,8 +265,10 @@ function Blog() {
           </div>
         </div>
       </div>
-    </div>
+      <Footer/>
+    </>
   );
 }
+
 
 export default Blog;

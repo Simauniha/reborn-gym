@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../Styles/Home.css";
-import About from "./about"
+import Home1 from "./Home1"
 const Home = () => {
   return (
     <>
@@ -64,17 +64,13 @@ const Home = () => {
                     <strong>Blog</strong>
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/careers">
-                    <strong>Careers</strong>
-                  </Link>
-                </li>
+              
 
                 {/* Read More button at end */}
                 <li className="nav-item ms-3">
                   <Link
                     className="nav-link btn nav-last-hover-button px-3 hover-button mb-1"
-                    to="/membership"
+                    to="/register"
                   >
                     <p className="btn-text">BECOME A MEMBER</p>
                   </Link>
@@ -94,7 +90,7 @@ const Home = () => {
             </h1>
             <Link
               className="hi btn nav-last-hover-button ml-5 hover-button mt-4"
-              to="/membership"
+              to="/register"
             >
               <p className="btn-text">BECOME A MEMBER</p>
             </Link>
@@ -102,7 +98,7 @@ const Home = () => {
           <div className="col-sm-6"></div>
         </div>
       </div>
-       <About></About>
+<Home1></Home1>
     </>
   );
 };

@@ -2,23 +2,16 @@ import Navbar from "./Navbar";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import axios from 'axios'
+import axios from "axios";
 import Swal from "sweetalert2";
+import { Link, useNavigate } from "react-router-dom";
+
 const Login = () => {
+  const navigate = useNavigate();
+
   const schema = yup.object({
-    user_name: yup.string().required("Name is required"),
-    user_email: yup
-      .string()
-      .email("Invalid email")
-      .required("Email is required"),
+    user_email: yup.string().email("Invalid email").required("Email is required"),
     user_password: yup.string().required("Password is required"),
-    user_phone: yup.string().required("Phone is required"),
-    user_age: yup
-      .number()
-      .typeError("Age must be a number")
-      .required("Age is required"),
-    user_height: yup.string().required("Height is required"),
-    user_weight: yup.string().required("Weight is required"),
   });
 
   const {
@@ -29,64 +22,72 @@ const Login = () => {
     resolver: yupResolver(schema),
   });
 
-  const handleLogic = async(data) => {
-    // console.log("✅ Form Data:", data);
-   const result=await axios.post("http://localhost:8000/api/register",data);
-  //  console.log(result,":$^%$^%$%^&");
-  if(result.data.success){
+const handleLogic = async (data, e) => {
+  e.preventDefault();
+
+  try {
+    const result = await axios.post("http://localhost:8000/api/login", data);
+    console.log("Login Response:", result.data);
+
+    const { success, user, token, userType, message } = result.data;
+
+    if (success && token) {
+      // Store in localStorage
+      localStorage.setItem("userInfo", JSON.stringify({ user, token, userType }));
+
+      // Success alert
+      Swal.fire({
+        icon: "success",
+        title: "Login Successful",
+        text: message || "Welcome back!",
+      });
+
+      // Redirect based on user type
+      if (userType === "admin") {
+        navigate("/adminDashboard");
+      } else {
+        navigate("/userDashboard");
+      }
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Login Failed",
+        text: message || "Invalid credentials",
+      });
+    }
+  } catch (err) {
     Swal.fire({
-      icon:"success",
-      title:"Login ",
-      text  :result.data.message
-    })
-  }else{
-     Swal.fire({
-      icon:"error",
-      title:"Login ",
-      text  :result.data.message
-    })
+      icon: "error",
+      title: "Server Error",
+      text: err.response?.data?.message || "Something went wrong!",
+    });
+    console.error("Login Error:", err);
   }
-   
-  };
+};
+
 
   return (
     <>
-     
-          <div className="div-about">
+      <div className="div-about">
         <Navbar />
         <div className="container-fluid mt-1">
-          <h1 className="about-heading">New Member</h1>
+          <h1 className="about-heading">Already Member</h1>
         </div>
       </div>
+
       <div className="row">
         <div className="col-sm-6">
           <img src="login img.png" className="login-img" alt="login" />
         </div>
+
         <div className="col-sm-6">
-          
           <h2 className="login-text home2-para">
-            <strong>FEEL FREE TO CONTACT</strong>
-            <br />
-            <span className="span-para">
-              <strong>WITH US!</strong>
-            </span>
+            <strong>ENTER DETAILS TO LOGIN</strong>
           </h2>
-          
+
           <div className="row">
-              
             <div className="col-sm-10">
-
               <form onSubmit={handleSubmit(handleLogic)}>
-                <input
-                  type="text"
-                  {...register("user_name")}
-                  placeholder="Enter Your Name"
-                  className="form-control user-name"
-                />
-                {errors.user_name && (
-                  <p className="text-danger ">{errors.user_name.message}</p>
-                )}
-
                 <input
                   type="email"
                   {...register("user_email")}
@@ -106,63 +107,75 @@ const Login = () => {
                 {errors.user_password && (
                   <p className="text-danger">{errors.user_password.message}</p>
                 )}
- 
-                <input
-                  type="text"
-                  {...register("user_phone")}
-                  placeholder="Enter Your Phone"
-                  className=" form-control user-name"
-                />
-                {errors.user_phone && (
-                  <p className="text-danger">{errors.user_phone.message}</p>
-                )}
 
-                <input
-                  type="number"
-                  {...register("user_age")}
-                  placeholder="Enter Your Age"
-                  className=" form-control user-name "
-                />
-                {errors.user_age && (
-                  <p className="text-danger">{errors.user_age.message}</p>
-                )}
-
-                <input
-                  type="text"
-                  {...register("user_height")}
-                  placeholder="Enter Your Height"
-                  className=" user-name form-control d-flex"
-                />
-                {errors.user_height && (
-                  <p className="text-danger">{errors.user_height.message}</p>
-                )}
-
-                <input
-                  type="text"
-                  {...register("user_weight")}
-                  placeholder="Enter Your Weight"
-                  className="user-name  form-control d-flex"
-                />
-                {errors.user_weight && (
-                  <p className="text-danger">{errors.user_weight.message}</p>
-                )}
-
-                <input
-                  type="submit"
-                  className="mb-2 user-name   btn btn-warning"
-                />
+                <input type="submit" className="m-2 btn btn-warning" />
               </form>
-               <div className="col-sm-2"></div>
-              </div>
-              </div>
+
+              <div className="col-sm-2">
+                <p className="text-warning">Not a member?</p>
+                <Link className="nav-link" to="/membership">
+                  <strong className="text-warning">Register</strong>
+                </Link>
               </div>
             </div>
+            <div className="row">
+                <div className="col-sm-6">
+                    <img src="login img.png" className="login-img" alt="login" />
+                </div>
+                <div className="col-sm-6">
+
+                    <h2 className="login-text home2-para">
+                        <strong>ENTER DETAILS TO LOGIN</strong>
+                        <br />
+                    </h2>
+
+                    <div className="row">
+
+                        <div className="col-sm-10">
+
+                            <form onSubmit={handleSubmit(handleLogic)}>
+
+                                <input
+                                    type="email"
+                                    {...register("user_email")}
+                                    placeholder="Enter Your Email"
+                                    className="form-control user-name"
+                                />
+                                {errors.user_email && (
+                                    <p className="text-danger">{errors.user_email.message}</p>
+                                )}
+
+                                <input
+                                    type="password"
+                                    {...register("user_password")}
+                                    placeholder="Enter Your Password"
+                                    className="form-control user-name"
+                                />
+                                {errors.user_password && (
+                                    <p className="text-danger">{errors.user_password.message}</p>
+                                )}
+
+                                <input
+                                    type="submit"
+                                    className="m-2 btn btn-warning"
+                                />
+                            </form>
+                            <div className="col-sm-2">
+                                <p className="text-warning">not a member</p>
+                                <Link className="nav-link" to="/register">
+                                    <strong className="text-warning">Register</strong>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="col-sm-4"></div>
-     
-      
-        
-            
-    
+        </>
+    );
+          </div>
+        </div>
+      </div>
     </>
   );
 };
