@@ -118,6 +118,61 @@ const handleLogic = async (data, e) => {
                 </Link>
               </div>
             </div>
+            <div className="row">
+                <div className="col-sm-6">
+                    <img src="login img.png" className="login-img" alt="login" />
+                </div>
+                <div className="col-sm-6">
+
+                    <h2 className="login-text home2-para">
+                        <strong>ENTER DETAILS TO LOGIN</strong>
+                        <br />
+                    </h2>
+
+                    <div className="row">
+
+                        <div className="col-sm-10">
+
+                            <form onSubmit={handleSubmit(handleLogic)}>
+
+                                <input
+                                    type="email"
+                                    {...register("user_email")}
+                                    placeholder="Enter Your Email"
+                                    className="form-control user-name"
+                                />
+                                {errors.user_email && (
+                                    <p className="text-danger">{errors.user_email.message}</p>
+                                )}
+
+                                <input
+                                    type="password"
+                                    {...register("user_password")}
+                                    placeholder="Enter Your Password"
+                                    className="form-control user-name"
+                                />
+                                {errors.user_password && (
+                                    <p className="text-danger">{errors.user_password.message}</p>
+                                )}
+
+                                <input
+                                    type="submit"
+                                    className="m-2 btn btn-warning"
+                                />
+                            </form>
+                            <div className="col-sm-2">
+                                <p className="text-warning">not a member</p>
+                                <Link className="nav-link" to="/register">
+                                    <strong className="text-warning">Register</strong>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-4"></div>
+        </>
+    );
           </div>
         </div>
       </div>

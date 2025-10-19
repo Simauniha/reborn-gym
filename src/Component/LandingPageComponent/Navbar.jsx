@@ -60,17 +60,12 @@ const Navbar = () => {
                 <strong>Blog</strong>
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/careers">
-                <strong>Careers</strong>
-              </Link>
-            </li>
-
+           
             {/* Membership Button */}
             <li className="nav-item ms-3">
               <Link
                 className="nav-link btn nav-last-hover-button px-3 hover-button mb-1"
-                to="/membership"
+                to="/register"
               >
                 <p className="btn-text">BECOME A MEMBER</p>
               </Link>
