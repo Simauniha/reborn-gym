@@ -35,7 +35,9 @@ function AboutGym() {
             <br /> anipurpose layouts. You can select your favorite layouts.
           </p>
         
-            
+            <button className="hi btn nav-last-hover-button  hover-button mt-5">
+              <p className="btn-text">BECOME A MEMBER</p>
+            </button>
            
            </div>
         
