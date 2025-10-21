@@ -33,9 +33,12 @@ function Trainer() {
                         <h5>John Sunsev</h5>
                     </div>
                 </div>
-            </div>
-        </>
-    )
-}
+            </div> 
+            </>
+    )}
+ 
+  
 
-export default Trainer
+        
+ 
+export default Trainer;

@@ -4,8 +4,8 @@ function AboutGym() {
   return (
     <>
     <div className="row">
-
-        <div className="col-sm-6">
+<div className="sol-sm-1"></div>
+        <div className="col-sm-5">
           <HoverImage
             src="about.png"
             alt="About"
@@ -34,8 +34,11 @@ function AboutGym() {
             Brook presents your services with flexible, convefnient and chient{" "}
             <br /> anipurpose layouts. You can select your favorite layouts.
           </p>
-
-        </div>
+        
+            
+           
+           </div>
+        
       </div>
     </>
   )
