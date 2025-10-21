@@ -4,7 +4,7 @@ import Footer from "./Footer"
 import GalleryImage from "./GalleryImage";
 import HoverImage from './HoverImage'
 import Trainer from "./Trainer";
-
+import Schedulelist from "./Schedulelist";
 const Home1 = () => {
   return (
     <>
@@ -38,7 +38,10 @@ const Home1 = () => {
 
       <Feedback/>
 
+    
+
       <Trainer />
+        <Schedulelist/>
 
       <Footer></Footer>
     </>

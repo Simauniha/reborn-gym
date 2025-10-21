@@ -21,10 +21,8 @@ const About = () => {
 
       <AboutGym />
 
-      <GalleryImage />
-
-      <Feedback />
-
+      <GalleryImage/>
+     <Feedback/>
       <Trainer />
 
       <Footer></Footer>
