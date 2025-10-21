@@ -13,7 +13,7 @@ const Profile = () => {
     }
 
     axios
-      .get("http://localhost:8000/api/users/profile", {
+      .get("http://localhost:8000/api/profile", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
