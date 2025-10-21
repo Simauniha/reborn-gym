@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Component/LandingPageComponent/Navbar";
-import About from "./Component/LandingPageComponent/About";
+import About from "./Component/LandingPageComponent/about";
 import Service from "./Component/LandingPageComponent/Service";
 import Footer from "./Component/LandingPageComponent/Footer";
 import Home from "./Component/LandingPageComponent/Home";
@@ -21,7 +21,6 @@ import "./App.css";
 function App() {
   return (
     <>
-
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={<Home />} />
@@ -41,7 +40,6 @@ function App() {
         <Route path="/adminDashboard/*" element={<AdminDashboard />} />
 
       </Routes>
-
     </>
   );
 }
