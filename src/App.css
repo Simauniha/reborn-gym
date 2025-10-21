@@ -27,11 +27,11 @@ body {
 }
 
 .about-head {
-    margin-top: 201px;
-    margin-left: 170px;
-    color: red;
-    font-size: 25px;
-      font-weight: lighter;
+  margin-top: 201px;
+  margin-left: 170px;
+  color: red;
+  font-size: 25px;
+  font-weight: lighter;
 }
 
 .heading1 {
@@ -126,41 +126,41 @@ body {
 }
 
 .hero-heading {
- margin-top: 37px;
-    margin-left: 33px;
-    color: rgb(16, 16, 71);
+  margin-top: 37px;
+  margin-left: 33px;
+  color: rgb(16, 16, 71);
 }
 
 .para3 {
- margin-top: 78px;
+  margin-top: 78px;
   margin-left: 33px;
   font-weight: lighter;
   font-size: 17px;
 }
 
 .hero-caption {
-    margin-top: 40px;
-    margin-left: 38px;
+  margin-top: 40px;
+  margin-left: 38px;
 }
 
 
 .hero-caption2 {
-    margin-left: 167px;
-    color: grey;
-    margin-top: -28px;
-    font-size: 15px;
+  margin-left: 167px;
+  color: grey;
+  margin-top: -28px;
+  font-size: 15px;
 }
 
 .section-title h5 {
-   margin-top: 90px;
-    margin-left: 216px;
-    color: red;
-    font-size: 25px;
-     font-weight: 200;
+  margin-top: 90px;
+  margin-left: 216px;
+  color: red;
+  font-size: 25px;
+  font-weight: 200;
 }
 
 .section-title h1 {
-margin-top: 30px;
+  margin-top: 30px;
   margin-left: 216px;
   color: rgb(16, 16, 71);
 }
@@ -217,14 +217,14 @@ margin-top: 30px;
 
 .section-subtitle {
   margin-top: 90px;
-    margin-left: -146px;
-    color: red;
-    font-size: 25px;
-     font-weight: 200;
+  margin-left: -146px;
+  color: red;
+  font-size: 25px;
+  font-weight: 200;
 }
 
 .section-title {
-margin-top: 30px;
+  margin-top: 30px;
   margin-left: -146px;
   color: rgb(16, 16, 71);
 }
@@ -267,11 +267,11 @@ margin-top: 30px;
 
 .service-card {
   background: #f7fbff;
-    margin-left: 91px;
-    padding: 30px 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-    height: 276px;
-    width: 370px;
+  margin-left: 91px;
+  padding: 30px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  height: 276px;
+  width: 370px;
 
 }
 
@@ -502,24 +502,6 @@ margin-top: 30px;
   width: 100%;
 }
 
-.cards-img {
-  height: 600px;
-  width: 800px;
-}
-
-.date-badge h5 {
-  margin: 0;
-  font-weight: bold;
-}
-
-.card-img-top {
-  transition: transform 0.4s ease-in-out;
-}
-
-.card-img-top:hover {
-  transform: scale(1.05);
-}
-
 .category-list li {
   padding: 8px 0;
   border-bottom: 1px solid #eee;
@@ -561,36 +543,12 @@ margin-top: 30px;
   color: white;
 }
 
-.date-badge {
-  width: 70px;
-  background: #f44336;
-  color: white;
-  text-align: center;
-  padding: 8px 0;
-  border-radius: 5px;
-  margin-left: 54px;
-  margin-bottom: 50px;
-}
-
-.date-badge:hover {
-  background: none;
-}
-
-.date-badge h5 {
-  margin: 0;
-  font-weight: bold;
-}
-
 .recent-post img {
   width: 80px;
   height: 70px;
   object-fit: cover;
-   border-radius: 0px !important;
+  border-radius: 0px !important;
   margin-top: 10px;
-}
-
-.recent-post:hover img {
-  transform: scale(1.05);
 }
 
 .recent-post p {
@@ -600,42 +558,24 @@ margin-top: 30px;
   margin-top: 18px;
 }
 
-.recent-post:hover p {
-  color: #f44336;
-  cursor: pointer;
-}
-
 /* Recent Posts Section */
 
 .recent-title {
-  margin-bottom: 1rem;
   font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.recent-posts-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* ensures posts start under title */
-  gap: 12px;
-
+  font-size: 17px;
 }
 
 .recent-post {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-      margin-left: -136px;
+  margin-left: -136px;
 }
-
 
 .recent-post:hover p {
   color: #f44336;
   cursor: pointer;
 }
-
-
 
 .card-title {
   transition: color 0.3s;
@@ -646,10 +586,10 @@ margin-top: 30px;
   cursor: pointer;
 }
 
-.card-img-top{
-      margin-left: 20px !important;
-    margin-top: 120px !important;
-    height: 398px !important;
+.card-img-top {
+  margin-left: 0px !important;
+  margin-top: 60px !important;
+  height: 398px !important;
 }
 
 .days-nav {
@@ -727,8 +667,78 @@ margin-top: 30px;
 /*Gallery Css*/
 
 .qutaion-img {
-      height: 100px !important;
-    width: 144px;
-    margin-left: -168px !important;
-    margin-top: -136px !important;
+  height: 100px !important;
+  width: 144px;
+  margin-left: -168px !important;
+  margin-top: -136px !important;
+}
+
+/* ============================= */
+/* Blog Card */
+.blog-post {
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.blog-post .position-relative {
+  height: 350px;
+  /* image box height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+.blog-post .card-img-top {
+  object-fit: cover;
+  /* ensures the image fills box properly */
+}
+
+/* Date badge styling */
+.date-badge {
+  position: absolute;
+  bottom: 145px;
+  left: 30px;
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 90px;
+  height: 90px;
+  line-height: 1.2;
+  font-size: 28px;
+  overflow: visible;
+}
+
+/* Hover effect only on badge */
+.date-badge:hover {
+  background: transparent;
+  color: #f44336;
+}
+
+/* Card body */
+.blog-post .card-body {
+  padding: 24px;
+  background: #fff;
+}
+
+.blog-post .card-title {
+  font-size: 18px;
+}
+
+.blog-post .card-text {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.blog-post .text-muted {
+  color: #6c757d !important;
+}
+
+/* Remove image hover effects */
+.blog-post .card-img-top:hover {
+  transform: none;
 }
