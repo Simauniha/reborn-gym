@@ -633,9 +633,8 @@ body {
   margin-top: -136px !important;
 }
 
-/* ============================= */
-
 /* Blog Card */
+
 .blog-post {
   border: none;
   border-radius: 8px;
@@ -704,6 +703,7 @@ body {
   margin-left: -168px !important;
   margin-top: -136px !important;
 }
+/* Trainer  */
 
 .Trainer {
   margin-left: 327px;
@@ -714,6 +714,8 @@ body {
 .trainer {
   margin-top: 1px;
 }
+
+/*Schedule  */
 
 .schedule-list h5 {
   margin-top: 207px;
@@ -739,8 +741,8 @@ body {
   font-size: 44px;
 }
 
-/* ===================== */
 /* Category Box Styling */
+
 .category-box {
   background-color: #fbf9ff;
   border-radius: 4px;
@@ -776,9 +778,7 @@ body {
   color: #f44336;
 }
 
-
-
-/* =================== */
+/* Subscribe */
 
 .search-box {
   background-color: #fcfaff;
@@ -815,6 +815,7 @@ body {
   padding: 10px 0;
 }
 
+/* Tag Clouds */
 
 .tag-cloud {
   margin-top: 10px;
@@ -877,3 +878,35 @@ body {
   margin-top: 20px;
   margin-left: 20px
 }
+
+/* Offer Section */
+
+.offer-section {
+  background-color: #022a48; /* Dark navy blue */
+  color: #fff;
+  padding: 80px 0;
+  margin-top: 50px;
+}
+
+.offer-content {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.offer-content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.offer-btn {
+  color: #fff;
+  border: none;
+  padding: 18px 36px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
