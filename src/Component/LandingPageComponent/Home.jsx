@@ -83,13 +83,14 @@ const Home = () => {
         <div className="row">
           <div className="col-sm-6">
             <div className="line-classn hi"></div>
+          
             <h1 className="hi">
               Build Perfect body
               <br /> Shape for good and
               <br /> Healthy life.
             </h1>
             <Link
-              className="hi btn nav-last-hover-button ml-5 hover-button mt-4"
+              className="hi btn nav-last-hover-button  hover-button mt-5"
               to="/register"
             >
               <p className="btn-text">BECOME A MEMBER</p>
