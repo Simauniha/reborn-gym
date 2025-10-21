@@ -5,6 +5,7 @@ import * as yup from "yup";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { Link, useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -32,17 +33,18 @@ const handleLogic = async (data, e) => {
     const { success, user, token, userType, message } = result.data;
 
     if (success && token) {
-      // Store in localStorage
+      // ✅ Store both full info and token separately
       localStorage.setItem("userInfo", JSON.stringify({ user, token, userType }));
+      localStorage.setItem("token", token); // <-- Added line
 
-      // Success alert
+      // ✅ Success alert
       Swal.fire({
         icon: "success",
         title: "Login Successful",
         text: message || "Welcome back!",
       });
 
-      // Redirect based on user type
+      // ✅ Redirect based on user type
       if (userType === "admin") {
         navigate("/adminDashboard");
       } else {
@@ -167,10 +169,9 @@ const handleLogic = async (data, e) => {
   }
 };
 
-
   return (
     <>
-      <div className="div-about">
+      <div className="div-about" >
         <Navbar />
         <div className="container-fluid mt-1">
           <h1 className="about-heading">Already Member</h1>
@@ -178,18 +179,26 @@ const handleLogic = async (data, e) => {
       </div>
 
       <div className="row">
-        <div className="col-sm-6">
+
+        <div className="col-sm-1"></div>
+
+        <div className="col-sm-5">
           <img src="login img.png" className="login-img" alt="login" />
         </div>
 
-        <div className="col-sm-6">
+        <div className="col-sm-5">
+
           <h2 className="login-text home2-para">
             <strong>ENTER DETAILS TO LOGIN</strong>
+            <br />
           </h2>
 
           <div className="row">
+
             <div className="col-sm-10">
+
               <form onSubmit={handleSubmit(handleLogic)}>
+
                 <input
                   type="email"
                   {...register("user_email")}
@@ -210,21 +219,33 @@ const handleLogic = async (data, e) => {
                   <p className="text-danger">{errors.user_password.message}</p>
                 )}
 
-                <input type="submit" className="m-2 btn btn-warning" />
+                <input
+                  type="submit"
+                  className="m-2 btn btn-warning"
+                />
               </form>
 
-              <div className="col-sm-2">
-                <p className="text-warning">Not a member?</p>
-                <Link className="nav-link" to="/membership">
-                  <strong className="text-warning">Register</strong>
+              <div>
+                <p>Not A Member</p>
+                <Link className="nav-link" to="/register">
+                  <strong>Register</strong>
                 </Link>
               </div>
             </div>
+            <div className="col-sm-2"></div>
           </div>
         </div>
+
+        <div className="col-sm-1"></div>
+
       </div>
+
+      <div>
+        <Footer />
+      </div>
+
     </>
-  );
+  )
 };
 
 export default Login;

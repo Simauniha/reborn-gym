@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from "./Navbar";
- import { TfiHome } from "react-icons/tfi";
- import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
- import { TfiEmail } from "react-icons/tfi";
- import Footer from "./footer"
+import { TfiHome } from "react-icons/tfi";
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { TfiEmail } from "react-icons/tfi";
+import Footer from "./Footer"
 const Contact = () => {
   return (
     <>
-    
-  <div className="div-about">
+
+      <div className="div-about">
         <Navbar />
         <div className="container-fluid mt-1">
           <h1 className="about-heading">Conatct Us</h1>
@@ -58,31 +58,31 @@ const Contact = () => {
               Send
             </button>
             <div className='d-flex address-box'>
-             <div >
-           <h3 className='address' >Buttonwood, California</h3>
-            <p className='address2'>Rosemead, CA 91770</p>
-          <TfiHome size={30} className='home-icon' />
-          </div>
-          
-          <div>
+              <div >
+                <h3 className='address' >Buttonwood, California</h3>
+                <p className='address2'>Rosemead, CA 91770</p>
+                <TfiHome size={30} className='home-icon' />
+              </div>
 
-            <h3 className='address'>+1 253 565 2365</h3>
-            <p className='address2'>Mon to Fri 9am to 6pm</p>
-            <HiOutlineDevicePhoneMobile size={35} className='phone-icon'  />
-           
-           
-          </div>
-          <div>
-            <h3 className='address'>support@colorlib.com</h3>
-            <p className='address2'>Send us your query anytime!</p>
-            <TfiEmail size={30} className='email-icon'  />
-          </div>
-          </div>
+              <div>
+
+                <h3 className='address'>+1 253 565 2365</h3>
+                <p className='address2'>Mon to Fri 9am to 6pm</p>
+                <HiOutlineDevicePhoneMobile size={35} className='phone-icon' />
+
+
+              </div>
+              <div>
+                <h3 className='address'>support@colorlib.com</h3>
+                <p className='address2'>Send us your query anytime!</p>
+                <TfiEmail size={30} className='email-icon' />
+              </div>
+            </div>
           </form>
         </div>
       </div>
-     
-<Footer/>
+
+      <Footer />
 
     </>
   );

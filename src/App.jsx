@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Component/LandingPageComponent/Navbar";
-import About from "./Component/LandingPageComponent/about";
-import Service from "./Component/LandingPageComponent/service";
-import Footer from "./Component/LandingPageComponent/footer";
+import About from "./Component/LandingPageComponent/About";
+import Service from "./Component/LandingPageComponent/Service";
+import Footer from "./Component/LandingPageComponent/Footer";
 import Home from "./Component/LandingPageComponent/Home";
 import Blog from "./Component/LandingPageComponent/Blog";
+import Gallery from "./Component/LandingPageComponent/Gallery";
 import "bootstrap/dist/js/bootstrap.bundle.js"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Register from "./Component/LandingPageComponent/Register";
@@ -14,55 +15,29 @@ import Login from "./Component/LandingPageComponent/Login";
 import Schedule from "./Component/LandingPageComponent/Schedule";
 import Contact from "./Component/LandingPageComponent/Contact"
 import Home1 from "./Component/LandingPageComponent/Home1"
-import NotFound from "./Component/LandingPageComponent/NotFound";
-import UserDashboard from "./Component/UserPageComponent/UserDashBoard/UserDashboard.jsx";
-import AdminDashboard from "./Component/AdminPageComponent/AdminDashboard/AdminDashboard.jsx";
-
-
+import UserDashboard from "./Component/UserPageComponent/UserDashBoard/UserDashboard";
+import AdminDashboard from "./Component/AdminPageComponent/AdminDashboard/AdminDashboard"
+import "./App.css";
 function App() {
-  const location = useLocation()
-  const [userData, setUserData] = useState(null)
-
-  useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("userInfo"))
-    setUserData(user)
-  }, [location])
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Service />} />
-          <Route path="/footer" element={<Footer />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/Schedule" element={<Schedule/>} />
-          <Route path="/Contact" element={<Contact/>} />
-           <Route path="/Home1" element={<Home1/>} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-      </Router>
-
       <Routes>
+        {/* Public Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Service />} />
         <Route path="/footer" element={<Footer />} />
-        <Route path="/membership" element={<Register />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/Schedule" element={<Schedule />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Home1" element={<Home1 />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/home1" element={<Home1 />} />
 
-        {/* {User Route} */}
         <Route path="/userDashboard/*" element={<UserDashboard />} />
 
-        {/* {Admin Route} */}
         <Route path="/adminDashboard/*" element={<AdminDashboard />} />
-
-        {/* <Route path="*" element={<NotFound />} /> */}
 
       </Routes>
     </>

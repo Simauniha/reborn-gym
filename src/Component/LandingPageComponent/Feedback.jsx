@@ -1,19 +1,9 @@
-import AboutGym from "./AboutGym";
-import Feedback from "./Feedback";
-import Footer from "./Footer"
-import GalleryImage from "./GalleryImage";
 import HoverImage from './HoverImage'
-import Trainer from "./Trainer";
 
-const Home1 = () => {
+function Feedback() {
   return (
     <>
-
-      <AboutGym/>
-
-      <GalleryImage />
-
-      {/* <div className="row">
+    <div className="row">
         <div className="col-sm-6 about-img6">
           <HoverImage src="/images/about2.png" alt="" />
         </div>
@@ -34,15 +24,9 @@ const Home1 = () => {
           <h5 className="hero-caption">JOHN SMITH</h5>
           <h6 className="hero-caption2">Gym Trainer</h6>
         </div>
-      </div> */}
-
-      <Feedback/>
-
-      <Trainer />
-
-      <Footer></Footer>
+      </div>
     </>
-  );
-};
+  )
+}
 
-export default Home1;
+export default Feedback

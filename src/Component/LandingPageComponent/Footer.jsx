@@ -2,6 +2,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsBrowserEdge } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,25 +13,29 @@ const Footer = () => {
             <div className="footer-title">COMPANY</div>
             <ul className="list-unstyled mt-5">
               <li className="mb-2">
-                <a className="footer-link" href="#">
+                <Link className="footer-link" to="/about">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a className="footer-link" href="#">
-                  Company
-                </a>
+                <Link className="footer-link" to="/services">
+                  Service
+                </Link>
               </li>
               <li className="mb-2">
-                <a className="footer-link" href="#">
-                  Press & Blog
-                </a>
+                <Link className="footer-link" to="/blog">
+                  Blog
+                </Link>
               </li>
               <li>
-                <a className="footer-link" href="#">
-                  Privacy Policy
-                 
-                </a>
+                <Link className="footer-link" to="/Gallery">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link className="footer-link" to="/Contact">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -39,24 +44,24 @@ const Footer = () => {
             <div className="footer-title">OPEN HOURS</div>
             <ul className="list-unstyled mt-5">
               <li className="mb-2">
-                <a className="footer-link" href="#">
+                <Link className="footer-link" to="#">
                   Monday 11am-7pm
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a className="footer-link" href="#">
+                <Link className="footer-link" to="#">
                   Tuesday-Friday 11am-8pm
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a className="footer-link" href="#">
+                <Link className="footer-link" to="#">
                   Saturday 10am-6pm
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <Link className="footer-link" to="#">
                   Sunday 11am-6pm
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -65,29 +70,29 @@ const Footer = () => {
             <div className="footer-title">RESOURCES</div>
             <ul className="list-unstyled mt-5">
               <li className="mb-2">
-                <a className="footer-link" href="#">
+                <Link className="footer-link" to="#">
                   Home Insurance
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a className="footer-link" href="#">
+                <Link className="footer-link" to="#">
                   Travel Insurance
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a className="footer-link" href="#">
+                <Link className="footer-link" to="#">
                   Car Insurance
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a className="footer-link" href="#">
+                <Link className="footer-link" to="#">
                   Business Insurance
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <Link className="footer-link" to="#">
                   Heal Insurance
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
