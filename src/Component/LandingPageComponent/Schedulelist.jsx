@@ -4,9 +4,12 @@ const Schedulelist = ()=>{
   return (
 
     <>
-   
+     <div className="schedule-list">
+                        <h5>OUR TEAM MEMBERS</h5>
+                       <h2><strong>SELECT THE PERFECT TIME</strong><h3 ><strong>YOU NEED NOW</strong></h3> </h2>
+                    </div>
 
-    <div className="App">
+    <div className="App mt-5">
      
       <ul className="nav justify-content-center days-nav py-3" id="daysNav" role="tablist">
         <li className="nav-item">
