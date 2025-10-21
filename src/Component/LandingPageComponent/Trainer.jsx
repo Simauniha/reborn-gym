@@ -4,12 +4,23 @@ function Trainer() {
     return (
         <>
             <div className="row">
-                <div className="section-title">
-                    <h5>OUR TEAM MEMBERS</h5>
-                    <h1>
-                        OUR MOST EXPERIENCED <br /> TRAINERS
-                    </h1>
+                <div className="col-sm-2"></div>
+                <div className="col-sm-4">
+                    <div className="section-title">
+                        <h5>OUR TEAM MEMBERS</h5>
+                        <h1>
+                            OUR MOST EXPERIENCED <br /> TRAINERS
+                        </h1>
+                    </div>
                 </div>
+                <div className="col-sm-4">
+                    <button className="hi btn nav-last-hover-button  hover-button mt-5">
+                        <p className="btn-text">BECOME A MEMBER</p>
+                    </button>
+                </div>
+                <div className="col-sm-2"></div>
+
+
             </div>
             <div className="row">
                 <div className="col-sm-4 team-img1">
@@ -33,12 +44,13 @@ function Trainer() {
                         <h5>John Sunsev</h5>
                     </div>
                 </div>
-            </div> 
-            </>
-    )}
- 
-  
+            </div>
+        </>
+    )
+}
 
-        
- 
+
+
+
+
 export default Trainer;
