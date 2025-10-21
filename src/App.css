@@ -79,7 +79,7 @@ body {
 .about-img1 img {
   margin-left: -200px;
   width: 940px;
-      height: 799px;
+  height: 799px;
 }
 
 .about-img2 img {
@@ -108,19 +108,21 @@ body {
 
 .about-img6 img {
   width: 533px;
-    height: 620px;
-    margin-left: 144px;
-}.qutaion{
+  height: 620px;
+  margin-left: 144px;
+}
+
+.qutaion {
   height: 100px;
   width: 100px;
 }
 
 .hero-section {
-   margin-top: 209px;
-    margin-left: 33px;
-    color: red;
-    font-size: 25px;
-      font-weight: lighter;
+  margin-top: 209px;
+  margin-left: 33px;
+  color: red;
+  font-size: 25px;
+  font-weight: lighter;
 }
 
 .hero-heading {
@@ -174,14 +176,14 @@ margin-top: 30px;
   height: 500px;
   width: 350px;
   margin-left: 51px;
- margin-top: 70px;
+  margin-top: 70px;
 }
 
 .team-img3 img {
   height: 500px;
   width: 350px;
   margin-left: -37px;
- margin-top: 70px;
+  margin-top: 70px;
 }
 
 .team-info h5 {
@@ -288,6 +290,7 @@ margin-top: 30px;
   background: #f4fbff;
   text-align: center;
 }
+
 .days-nav .nav-link {
   font-weight: 700;
   color: #16163f;
@@ -295,6 +298,7 @@ margin-top: 30px;
   padding: 1rem 2rem;
   cursor: pointer;
 }
+
 .days-nav .nav-link.active {
   background: #ff1d1d;
   color: #fff !important;
@@ -309,17 +313,21 @@ margin-top: 30px;
   text-align: center;
   transition: 0.3s;
 }
+
 .schedule-card:hover {
   background: #ff1d1d;
   color: #fff;
 }
+
 .time:hover {
   background-color: #fff;
 }
+
 .schedule-card.active {
   background: #ff1d1d;
   color: #fff;
 }
+
 .schedule-card .time {
   background: #000;
   color: #fff;
@@ -329,19 +337,23 @@ margin-top: 30px;
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
 .schedule-card.active .time {
   background: #fff;
   color: #000;
 }
+
 .schedule-card h5 {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
+
 .schedule-card p {
   margin: 0;
   font-size: 0.9rem;
   color: #7a7a9d;
 }
+
 .schedule-card.active p {
   color: #fff;
 }
@@ -475,10 +487,12 @@ margin-top: 30px;
 .user-name {
   display: flex;
   margin-top: 35px;
-   border: 0px !important;
-   border-bottom: 2px solid  rgb(197, 190, 224) !important; 
-   gap: 40px !important;
-}.blog-heading {
+  border: 0px !important;
+  border-bottom: 2px solid rgb(197, 190, 224) !important;
+  gap: 40px !important;
+}
+
+.blog-heading {
   background-color: black;
   color: white;
   height: 400px;
@@ -492,12 +506,6 @@ margin-top: 30px;
   height: 600px;
   width: 800px;
 }
-
-.blog-post {
-  margin-top: 164px;
-  font-weight: bold;
-}
-
 
 .date-badge h5 {
   margin: 0;
@@ -592,11 +600,40 @@ margin-top: 30px;
   transition: color 0.3s;
 }
 
+.recent-post:hover p {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Recent Posts Section */
+
+.recent-title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.recent-posts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* ensures posts start under title */
+  gap: 12px;
+}
+
+.recent-post {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
 
 .recent-post:hover p {
   color: #f44336;
   cursor: pointer;
 }
+
+
 
 .card-title {
   transition: color 0.3s;
