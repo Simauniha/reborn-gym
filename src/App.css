@@ -585,8 +585,7 @@ margin-top: 30px;
   width: 80px;
   height: 70px;
   object-fit: cover;
-  border-radius: 5px;
-  transition: transform 0.3s ease-in-out;
+   border-radius: 0px !important;
   margin-top: 10px;
 }
 
@@ -598,6 +597,7 @@ margin-top: 30px;
   margin: 0;
   font-weight: 600;
   transition: color 0.3s;
+  margin-top: 18px;
 }
 
 .recent-post:hover p {
@@ -619,12 +619,14 @@ margin-top: 30px;
   align-items: flex-start;
   /* ensures posts start under title */
   gap: 12px;
+
 }
 
 .recent-post {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+      margin-left: -136px;
 }
 
 
@@ -644,7 +646,11 @@ margin-top: 30px;
   cursor: pointer;
 }
 
-
+.card-img-top{
+      margin-left: 20px !important;
+    margin-top: 120px !important;
+    height: 398px !important;
+}
 
 .days-nav {
   background: #f4fbff;
