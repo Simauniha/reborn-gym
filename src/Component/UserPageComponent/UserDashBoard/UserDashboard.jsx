@@ -17,25 +17,26 @@ const UserDashboard = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-black via-gray-900 to-black text-white">
-      {/* Top Navigation (Sidebar-style) */}
-      <Sidebar />
+    <>
+      <div className="flex h-screen bg-black text-white">
+        <Sidebar onLogout={handleLogout} />
 
-      {/* Welcome / Topbar Section */}
-      <Topbar user={user} onLogout={handleLogout} />
-
-      {/* Main Content */}
-      <div className="flex-1 p-6">
-        <Routes>
-          <Route path="/" element={<DashboardHome />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/settings" element={<Settings />} />
-        </Routes>
+        <div className="flex flex-col flex-1 overflow-hidden">
+          <Topbar user={user} />
+          <div className="p-6 overflow-y-auto flex-1">
+            <Routes>
+              <Route path="/" element={<DashboardHome />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </div>
+        </div>
       </div>
-
-      {/* Footer */}
-      <Footer />
-    </div>
+      <div>
+        {/* Footer */}
+        <Footer />
+      </div>
+    </>
   );
 };
 
