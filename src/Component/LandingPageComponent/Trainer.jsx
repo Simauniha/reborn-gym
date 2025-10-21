@@ -8,14 +8,14 @@ function Trainer() {
                 <div className="col-sm-4">
                     <div className="section-title">
                         <h5>OUR TEAM MEMBERS</h5>
-                        <h1>
-                            OUR MOST EXPERIENCED <br /> TRAINERS
+                        <h1><strong> OUR MOST EXPERIENCED <br /> TRAINERS</strong>
+                           
                         </h1>
                     </div>
                 </div>
                 <div className="col-sm-4">
-                    <button className="hi btn nav-last-hover-button  hover-button mt-5">
-                        <p className="btn-text">BECOME A MEMBER</p>
+                    <button className="hi Trainer btn nav-last-hover-button  hover-button mt-5">
+                        <p className="btn-text trainer">BECOME A MEMBER</p>
                     </button>
                 </div>
                 <div className="col-sm-2"></div>
