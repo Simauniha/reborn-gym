@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { FaUser } from "react-icons/fa";
 import { FaComments } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 function Blog() {
   const blogPosts = [
@@ -57,10 +58,10 @@ function Blog() {
                     alt={`Blog ${i + 1}`}
                   />
                 </div>
-                  <div className="date-badge text-center">
-                    <strong>15</strong><br/>
-                    <small>Jan</small>
-                  </div>
+                <div className="date-badge text-center">
+                  <strong>15</strong><br />
+                  <small>Jan</small>
+                </div>
                 <div className="card-body bg-white">
                   <h5 className="card-title fw-bold">
                     {post.title}
@@ -79,65 +80,104 @@ function Blog() {
             ))}
           </div>
 
-          {/* Sidebar */}
-          <div className="col-lg-4">
-            {/* Search Box */}
-            <div className="card border-0 shadow-sm p-3 mb-4">
-              <div className="input-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Search Keyword"
-                />
-                <button className="btn btn-danger">SEARCH</button>
-              </div>
+          {/*Sidebar */}
+
+          <div className="card border-0 shadow-sm p-4 mb-4 text-center search-box">
+            {/* Search Bar */}
+            <div className="input-group mb-3">
+              <input
+                type="text"
+                className="form-control search-input"
+                placeholder="Search Keyword"
+              />
+              <button className="btn search-btn">
+                <FaSearch />
+              </button>
             </div>
 
-            {/* Categories */}
-            <div className="card border-0 shadow-sm p-3 mb-4">
-              <h6 className="fw-bold mb-3">Category</h6>
-              <ul className="list-unstyled mb-0">
-                <li><a href="#" className="text-decoration-none text-dark">Restaurant food (37)</a></li>
-                <li><a href="#" className="text-decoration-none text-dark">Travel news (10)</a></li>
-                <li><a href="#" className="text-decoration-none text-dark">Modern technology (03)</a></li>
-                <li><a href="#" className="text-decoration-none text-dark">Product (11)</a></li>
-                <li><a href="#" className="text-decoration-none text-dark">Inspiration (21)</a></li>
-                <li><a href="#" className="text-decoration-none text-dark">Health Care (21)</a></li>
-              </ul>
-            </div>
+            {/* Bordered Search Button */}
+            <button className="btn w-100 py-2 fw-semibold search-border-btn">
+              SEARCH
+            </button>
+          </div>
 
-            {/* Recent Posts */}
-            <div className="shadow-sm p-3 mb-4">
-              <h6 className="fw-bold mb-3 recent-title">Recent Posts</h6>
-              <div className="recent-posts-list">
-                {recentPosts.map((post, i) => (
-                  <div key={i} className="d-flex mb-3 recent-post align-items-start">
-                    <img
-                      src={post.img}
-                      alt="Post"
-                      width="70"
-                      className="rounded"
-                    />
-                    <div className="ms-3">
-                      <p className="mb-1 fw-semibold small">{post.title}</p>
-                      <small className="text-muted">{post.time}</small>
-                    </div>
+          {/* Categories */}
+          <div className="category-box p-4 mb-4">
+            <h6 className="fw-bold mb-3 category-title">Category</h6>
+            <ul className="list-unstyled mb-0 category-list">
+              <li><a href="#">Restaurant food (37)</a></li>
+              <li><a href="#">Travel news (10)</a></li>
+              <li><a href="#">Modern technology (03)</a></li>
+              <li><a href="#">Product (11)</a></li>
+              <li><a href="#">Inspiration (21)</a></li>
+              <li><a href="#">Health Care (21)</a></li>
+            </ul>
+          </div>
+
+          {/* Recent Posts */}
+          <div className="shadow-sm p-3 mb-4">
+            <h6 className="fw-bold mb-3 recent-title">Recent Posts</h6>
+            <div className="recent-posts-list">
+              {recentPosts.map((post, i) => (
+                <div key={i} className="d-flex mb-3 recent-post align-items-start">
+                  <img
+                    src={post.img}
+                    alt="Post"
+                    width="70"
+                    className="rounded"
+                  />
+                  <div className="ms-3">
+                    <p className="mb-1 fw-semibold small">{post.title}</p>
+                    <small className="text-muted">{post.time}</small>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
+          </div>
 
-            {/* Subscribe Box */}
-            <div className="card border-0 shadow-lg p-3">
-              <h6 className="fw-bold mb-3">Subscribe</h6>
-              <div className="input-group">
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Enter Email"
-                />
-                <button className="btn btn-danger">SUBSCRIBE</button>
-              </div>
+          {/* tag clouds */}
+          <div className="card border-0 shadow-sm p-4 mb-4 tag_clouds">
+            <h6 className="fw-bold mb-3">Tag Clouds</h6>
+            <hr style={{ opacity: 0.2 }} />
+
+            <div className="tag-cloud d-flex flex-wrap gap-2">
+              {["project", "love", "technology", "travel", "restaurant", "life style", "design", "illustration"].map((tag, index) => (
+                <a href="#" key={index} className="tag-item text-decoration-none">
+                  {tag}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Instagram Feeds */}
+          <div className="card border-0 shadow-sm p-4 mb-4 instagram-card">
+            <h6 className="fw-bold mb-3">Instagram Feeds</h6>
+            <hr className="divider" />
+
+            <div className="instagram-feeds">
+              <img src="single_blog_2.png" alt="feed1" />
+              <img src="single_blog_1.png" alt="feed2" />
+              <img src="post_2.png" alt="feed3" />
+              <img src="post_3.png" alt="feed4" />
+              <img src="single_blog_5.png" alt="feed5" />
+              <img src="single_blog_4.png" alt="feed6" />
+            </div>
+          </div>
+
+
+
+          {/* Subscribe Box */}
+          <div className="card border-0 shadow-lg p-3 subsribe">
+            <h6 className="fw-bold mb-3">Newsletter</h6>
+            <div className="pt-3 pb-3">
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Enter Email"
+              />
+              <button className="btn w-100 py-2 fw-semibold search-border-btn mt-3">
+                SEARCH
+              </button>
             </div>
           </div>
         </div>

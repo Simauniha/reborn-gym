@@ -152,18 +152,18 @@ body {
 }
 
 .section-title h5 {
-   margin-top: 90px;
-    margin-left: 32px;
-    color: red;
-    font-size: 25px;
-     font-weight: 200;
+  margin-top: 90px;
+  margin-left: 32px;
+  color: red;
+  font-size: 25px;
+  font-weight: 200;
 }
 
 .section-title h1 {
-margin-top: 30px;
-    margin-left: 32px;
-    color: rgb(16, 16, 71);
-    font-weight: bold;
+  margin-top: 30px;
+  margin-left: 32px;
+  color: rgb(16, 16, 71);
+  font-weight: bold;
 }
 
 .team-img1 img {
@@ -363,10 +363,10 @@ margin-top: 30px;
 /*footer css*/
 
 .footer-hero {
-  background: url('/public/section_bg01.png');
+  background: url('section_bg01.png');
   height: 700px;
-  background-position: center;
-  background-size: cover;
+  /* background-position: center; */
+  /* background-size:cover; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-top: 50px;
@@ -503,47 +503,6 @@ margin-top: 30px;
   width: 100%;
 }
 
-.category-list li {
-  padding: 8px 0;
-  border-bottom: 1px solid #eee;
-  list-style: none;
-}
-
-.category-list li a {
-  text-decoration: none;
-  color: #000;
-  transition: color 0.3s;
-}
-
-.category-list li a:hover {
-  color: #f44336;
-}
-
-.search-box input {
-  border-radius: 0;
-}
-
-.search-box button {
-  border-radius: 0;
-  background: #f44336;
-  color: white;
-}
-
-.search-btn {
-  border: 1px solid #f44336;
-  text-align: center;
-  padding: 10px;
-  margin-top: 10px;
-  color: #f44336;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.search-btn:hover {
-  background: #f44336;
-  color: white;
-}
-
 .recent-post img {
   width: 80px;
   height: 70px;
@@ -675,6 +634,7 @@ margin-top: 30px;
 }
 
 /* ============================= */
+
 /* Blog Card */
 .blog-post {
   border: none;
@@ -684,16 +644,13 @@ margin-top: 30px;
 
 .blog-post .position-relative {
   height: 350px;
-  /* image box height */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
 }
 
 .blog-post .card-img-top {
   object-fit: cover;
-  /* ensures the image fills box properly */
 }
 
 /* Date badge styling */
@@ -742,42 +699,181 @@ margin-top: 30px;
 /* Remove image hover effects */
 .blog-post .card-img-top:hover {
   transform: none;
-      height: 100px !important;
-    width: 144px;
-    margin-left: -168px !important;
-    margin-top: -136px !important;
+  height: 100px !important;
+  width: 144px;
+  margin-left: -168px !important;
+  margin-top: -136px !important;
 }
 
-.Trainer{
-      margin-left: 327px;
-    margin-top: 183px !important;
+.Trainer {
+  margin-left: 327px;
+  margin-top: 183px !important;
 
 }
 
-.trainer{
+.trainer {
   margin-top: 1px;
 }
 
-.schedule-list h5{
+.schedule-list h5 {
   margin-top: 207px;
-    margin-left: 620px;
-    color: red;
-    font-size: 21px;
-    font-weight: 400;
+  margin-left: 620px;
+  color: red;
+  font-size: 21px;
+  font-weight: 400;
 }
 
-.schedule-list h2{
-    margin-top: 36px;
-    margin-left: 454px;
-    color: rgb(16, 16, 71);
-    font-weight: bold;
-    font-size: 44px;
+.schedule-list h2 {
+  margin-top: 36px;
+  margin-left: 454px;
+  color: rgb(16, 16, 71);
+  font-weight: bold;
+  font-size: 44px;
 }
 
-.schedule-list h3{
- margin-top: 6px;
-    margin-left: 96px;
-    color: rgb(16, 16, 71);
-    font-weight: bold;
-    font-size: 44px;
+.schedule-list h3 {
+  margin-top: 6px;
+  margin-left: 96px;
+  color: rgb(16, 16, 71);
+  font-weight: bold;
+  font-size: 44px;
+}
+
+/* ===================== */
+/* Category Box Styling */
+.category-box {
+  background-color: #fbf9ff;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+.category-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2d2d2d;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 4px;
+  /* margin-bottom: 16px; */
+}
+
+.category-list li {
+  padding: 20px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.category-list li:last-child {
+  border-bottom: none;
+}
+
+.category-list a {
+  color: #253b6b;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.category-list a:hover {
+  color: #f44336;
+}
+
+
+
+/* =================== */
+
+.search-box {
+  background-color: #fcfaff;
+  padding: 10px;
+}
+
+.search-box .form-control {
+  border: 1px solid #eee;
+  box-shadow: none;
+}
+
+.search-btn {
+  background-color: #f44336;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-border-btn {
+  border: 1px solid #f44336;
+  color: #f44336;
+  margin-top: 10px;
+}
+
+.search-border-btn:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.subsribe h6 {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 0;
+}
+
+
+.tag-cloud {
+  margin-top: 10px;
+}
+
+.tag-item {
+  border: 1px solid #ddd;
+  padding: 6px 14px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #6c757d;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.tag-item:hover {
+  background-color: #e74c3c;
+  color: #fff;
+  border-color: #e74c3c;
+}
+
+.tag-clouds {
+  background-color: #fcfaff;
+}
+
+.tag_clouds h6 {
+  font-weight: 700;
+  color: #222;
+}
+
+/* Instagram Feeds Card */
+
+.instagram-card {
+  background-color: #fcfaff;
+}
+
+.instagram-card h6 {
+  font-weight: 700;
+  color: #222;
+}
+
+.instagram-card .divider {
+  opacity: 0.2;
+  margin-bottom: 20px;
+}
+
+/* Instagram feed grid */
+.instagram-feeds {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: flex-start;
+}
+
+.instagram-feeds img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 20px
 }
