@@ -79,6 +79,7 @@ body {
 .about-img1 img {
   margin-left: -200px;
   width: 940px;
+      height: 799px;
 }
 
 .about-img2 img {
@@ -679,3 +680,7 @@ body {
 
 /*Gallery Css*/
 
+.qutaion img {
+  height: -100px;
+  width: 80px;
+}
