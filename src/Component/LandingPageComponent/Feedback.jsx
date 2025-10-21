@@ -5,7 +5,7 @@ function Feedback() {
     <>
     <div className="row">
         <div className="col-sm-6 about-img6">
-          <HoverImage src="/images/about2.png" alt="" />
+          <img src="/images/about2.png" alt="" />
         </div>
         <div className="col-sm-6">
           <h5 className="hero-section">CLIENT FEEDBACK</h5>
