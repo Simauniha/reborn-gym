@@ -28,7 +28,7 @@ const About = () => {
           <HoverImage src="/images/about2.png" alt="" />
         </div>
         <div className="col-sm-4">
-            <HoverImage src="qutaion.png" alt=""/>
+           
           <h5 className="hero-section">CLIENT FEEDBACK</h5>
           <h1 className="hero-heading">
             WHAT OUR CLIENT THINK
@@ -43,7 +43,6 @@ const About = () => {
             the <br />
             designers is intended.
           </p>
-                 <img src="/images/qutaion.png"></img>
           <h5 className="hero-caption">JOHN SMITH</h5>
           <h6 className="hero-caption2">Gym Trainer</h6>
             
