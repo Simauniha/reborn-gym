@@ -680,7 +680,7 @@ body {
 
 /*Gallery Css*/
 
-.qutaion img {
-  height: -100px;
-  width: 80px;
+.qutaion-img {
+  height: 100px !important;
+  width: 110px;
 }

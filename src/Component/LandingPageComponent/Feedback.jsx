@@ -21,11 +21,11 @@ function Feedback() {
             the <br />
             designers is intended.
           </p>
-          <div  className="qutaion" ><img src="qutaion.png"/> </div>
+          <div><img src="qutaion.png" className="qutaion-img"/>  </div>
        
           <h5 className="hero-caption">JOHN SMITH</h5>
           <h6 className="hero-caption2">Gym Trainer</h6>
-         
+        
         
         </div>
       </div>
