@@ -5,6 +5,7 @@ import GalleryImage from "./GalleryImage";
 import HoverImage from './HoverImage'
 import Trainer from "./Trainer";
 import Schedulelist from "./Schedulelist";
+import Membership from "./Membership";
 const Home1 = () => {
   return (
     <>
@@ -15,11 +16,13 @@ const Home1 = () => {
 
       <Feedback />
 
+      <Membership/>
+
       <Trainer />
       
       <Schedulelist />
 
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 };
