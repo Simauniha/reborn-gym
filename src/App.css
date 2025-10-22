@@ -77,39 +77,19 @@ body {
 }
 
 .about-img1 img {
-  margin-left: -200px;
-  width: 940px;
-  height: 799px;
+  /* margin-left: -200px; */
+  /* width: 940px; */
+  /* height: 799px; */
+  margin: 0px;
+  margin-top: 25px;
 }
 
 .about-img2 img {
-  height: 387px;
-  width: 357px;
+  /* height: 387px; */
+  /* width: 357px; */
+  margin: 0px;
   margin-left: -3px;
-}
-
-.about-img3 img {
-  height: 387px;
-  width: 357px;
-  margin-top: 24px;
-}
-
-.about-img4 img {
-  height: 387px;
-  width: 347px;
-  margin-left: -3px;
-}
-
-.about-img5 img {
-  height: 387px;
-  width: 347px;
-  margin-top: 24px;
-}
-
-.about-img6 img {
-  width: 533px;
-  height: 620px;
-  margin-left: 144px;
+  margin-top: 25px;
 }
 
 .qutaion {
@@ -364,12 +344,13 @@ body {
 
 .footer-hero {
   background: url('section_bg01.png');
-  height: 700px;
+  height: 600px;
   /* background-position: center; */
   /* background-size:cover; */
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  /* padding: 20px; */
 }
 
 .footer-title {
@@ -654,8 +635,8 @@ body {
 /* Date badge styling */
 .date-badge {
   position: absolute;
-  bottom: 145px;
-  left: 30px;
+  bottom: 120px;
+  left: 23px;
   background-color: #f44336;
   color: #fff;
   padding: 8px 10px;
@@ -697,18 +678,15 @@ body {
 /* Remove image hover effects */
 .blog-post .card-img-top:hover {
   transform: none;
-  height: 100px !important;
-  width: 144px;
-  margin-left: -168px !important;
-  margin-top: -136px !important;
 }
+
 /* Trainer  */
 
 .Trainer {
-     margin-left: 304px;
-    margin-top: 183px !important;
-    width: 192px;
-    height: 67px;
+  margin-left: 304px;
+  margin-top: 183px !important;
+  width: 192px;
+  height: 67px;
 
 }
 
@@ -739,7 +717,7 @@ body {
 }.admin-nav{
   height: 200px;
   width: 3000px;
-  background-color: rgb(0, 0, 0); 
+  background-color: rgb(0, 0, 0);
   margin-left: -289px;
  
 }.user-nav{
@@ -821,18 +799,19 @@ text-decoration: none;
   margin-top: 1px;
 }
 
-.Gym{
-    margin-left: 170px;
-    width: 198px;
-    height: 71px;
+.Gym {
+  margin-left: 170px;
+  width: 198px;
+  height: 71px;
 }
 
 .Gym2 {
-   margin-top: 168px !important;
-    margin-left: 427px;
-    width: 187px;
+  margin-top: 168px !important;
+  margin-left: 427px;
+  width: 187px;
 }
-.services-btn{
+
+.services-btn {
   margin-top: 1px;
 }
 
@@ -993,7 +972,8 @@ text-decoration: none;
 /* Offer Section */
 
 .offer-section {
-  background-color: #022a48; /* Dark navy blue */
+  background-color: #022a48;
+  /* Dark navy blue */
   color: #fff;
   padding: 80px 0;
   margin-top: 50px;
@@ -1019,7 +999,9 @@ text-decoration: none;
   padding: 18px 36px;
   font-size: 12px;
   font-weight: 600;
-}.admin-logo img{
+}
+
+.admin-logo img {
   height: 190px !important;
     width: 207px;
     margin-left: -147px;
@@ -1112,7 +1094,9 @@ color: white;
     font-size: 46px;
 }.manageUser{
   background-image: url('/public//abstract-blurred-fitness-or-gym-background-free-photo.jpg');
-}.table-user{
+}
+
+.table-user {
   margin-left: 449px;
 }.user-info{
       height: 60px;
@@ -1132,4 +1116,88 @@ color: white;
     background-color:  rgb(82, 4, 4);
     margin-left: 10px;
     margin-top: 8px;
+}
+
+/* gallery */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(60%);
+}
+
+.gallery-effect:hover {
+  transform: scale(1.05);
+  filter: brightness(60%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+  color: #fff;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.arrow-icon {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.text h3 {
+  font-size: 18px;
+  margin: 5px 0 0;
+  font-weight: bold;
+}
+
+.text p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.login-btn {
+  color: #f44336;
+}
+.register-btn{
+  border: 1px solid #f44336;
+  color: #f44336;
+}
+.register-btn:hover {
+  background-color: #f44336;
+  color:white;
 }
