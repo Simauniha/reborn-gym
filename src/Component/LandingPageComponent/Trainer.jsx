@@ -15,7 +15,7 @@ function Trainer() {
                 </div>
                 <div className="col-sm-4">
                     <button className="hi Trainer btn nav-last-hover-button  hover-button mt-5">
-                        <p className="btn-text trainer">BECOME A MEMBER</p>
+                        <p className="btn-text trainer">MORE SERVICES</p>
                     </button>
                 </div>
                 <div className="col-sm-2"></div>

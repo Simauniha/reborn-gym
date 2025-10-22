@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Component/LandingPageComponent/Navbar";
-import About from "./Component/LandingPageComponent/about";
+import About from "./Component/LandingPageComponent/About";
 import Service from "./Component/LandingPageComponent/Service";
 import Footer from "./Component/LandingPageComponent/Footer";
 import Home from "./Component/LandingPageComponent/Home";

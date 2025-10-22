@@ -5,6 +5,7 @@ import HoverImage from "./HoverImage";
 import GalleryImage from "./GalleryImage";
 import AboutGym from "./AboutGym";
 import Feedback from "./Feedback";
+import Membership from "./Membership";
 
 
 const About = () => {
@@ -21,8 +22,12 @@ const About = () => {
 
       <AboutGym />
 
-      <GalleryImage/>
-     <Feedback/>
+      <GalleryImage />
+
+      <Feedback />
+
+      <Membership />
+      
       <Trainer />
 
       <Footer></Footer>
