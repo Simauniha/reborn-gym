@@ -9,11 +9,16 @@ const Topbar = ({ user }) => {
     "User";
 
   return (
-    <div className="w-full bg-gradient-to-r from-gray-900 via-black to-gray-900 shadow-md border-b border-gray-800 py-5 px-8 flex justify-start items-center">
-      <h3 className="text-2xl font-semibold text-white tracking-wide">
-        Welcome, <span className="text-red-500">{username}</span> 👋
+    <>
+   <div className="user-hero"> </div>
+     <div className="user-heading">
+      <h3 className="">
+       <strong>Welcome, <span className="text-red-500">{username}</span> 👋</strong> 
       </h3>
     </div>
+    
+  
+      </>
   );
 };
 

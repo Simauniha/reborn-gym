@@ -6,6 +6,7 @@ import HoverImage from './HoverImage'
 import Trainer from "./Trainer";
 import Schedulelist from "./Schedulelist";
 import Membership from "./Membership";
+import Servicehome from "./servicehome"
 const Home1 = () => {
   return (
     <>
@@ -19,8 +20,11 @@ const Home1 = () => {
       <Membership/>
 
       <Trainer />
+      <Servicehome/>
       
       <Schedulelist />
+
+      
 
       {/* <Footer></Footer> */}
     </>

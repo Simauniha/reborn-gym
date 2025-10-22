@@ -13,63 +13,77 @@ const Sidebar = ({ onLogout }) => {
   };
 
   return (
-    <div className="w-64 h-screen bg-gradient-to-b from-black via-gray-900 to-gray-950 text-white flex flex-col justify-between shadow-xl">
+    <>
+    <nav className=" user-nav flex flex-col gap-3">
+      <div className="row">
+        <div className="col-sm-2"></div>
+        <div className=" admin col-sm-4">
+  
       {/* Top Section */}
-      <div>
-        <h1 className="text-center text-3xl font-bold py-6 tracking-wide border-b border-gray-800">
+    
+          <div  className="admin-logo"><img src="rebprn.jpg"></img></div>
+        <h1 className="user-title">
           Reborn Gym
-        </h1>
+        </h1></div>
 
-        <nav className="mt-6 flex flex-col space-y-3 px-6">
-          <NavLink
+
+
+        <div className="col-sm-4">
+          <ul className="user-nav list-unstyled d-flex gap-5">
+      <li className="user-list">  <NavLink
             to="/userDashboard"
             className={({ isActive }) =>
-              `flex items-center gap-3 text-lg font-medium py-2 px-3 rounded-md transition-all ${
+              ` home-list flex items-center gap-3 text-lg font-medium py-2 px-3 rounded-md transition-all ${
                 isActive ? "bg-gray-800 text-red-400" : "text-gray-300 hover:text-white hover:bg-gray-800"
               }`
             }
           >
             <Home size={20} />
             Home
-          </NavLink>
+          </NavLink></li>  
 
-          <NavLink
+      <li className="user-list">    <NavLink
             to="/userDashboard/profile"
             className={({ isActive }) =>
-              `flex items-center gap-3 text-lg font-medium py-2 px-3 rounded-md transition-all ${
+              ` profile-list2  flex items-center gap-3 text-lg font-medium py-2 px-3 rounded-md transition-all ${
                 isActive ? "bg-gray-800 text-red-400" : "text-gray-300 hover:text-white hover:bg-gray-800"
               }`
             }
           >
             <User size={20} />
             Profile
-          </NavLink>
+          </NavLink></li> 
 
-          <NavLink
+     <li className="user-list">     <NavLink
             to="/userDashboard/settings"
             className={({ isActive }) =>
-              `flex items-center gap-3 text-lg font-medium py-2 px-3 rounded-md transition-all ${
+              `setting-list3 flex items-center gap-3 text-lg font-medium py-2 px-3 rounded-md transition-all ${
                 isActive ? "bg-gray-800 text-red-400" : "text-gray-300 hover:text-white hover:bg-gray-800"
               }`
             }
           >
             <Settings size={20} />
             Settings
-          </NavLink>
-        </nav>
+          </NavLink></li>
+          </ul>
+       
       </div>
 
       {/* Bottom Logout Section */}
-      <div className="px-6 mb-8">
+      <div className="">
         <button
           onClick={handleLogout}
-          className="w-full flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-lg shadow-md transition-all"
+          className=" userlogout-btn"
         >
-          <LogOut size={18} />
-          Logout
+         
+      <h1>Logout</h1>    
         </button>
       </div>
+    
     </div>
+
+    </nav>
+    </>
   );
 };
 
