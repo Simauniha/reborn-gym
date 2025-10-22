@@ -23,229 +23,117 @@ const Login = () => {
     resolver: yupResolver(schema),
   });
 
-const handleLogic = async (data, e) => {
-  e.preventDefault();
+  const handleLogic = async (data, e) => {
+    e.preventDefault();
 
-  try {
-    const result = await axios.post("http://localhost:8000/api/login", data);
-    console.log("Login Response:", result.data);
+    try {
+      const result = await axios.post("http://localhost:8000/api/login", data);
+      const { success, user, token, userType, message } = result.data;
 
-    const { success, user, token, userType, message } = result.data;
+      if (success && token) {
+        localStorage.setItem("userInfo", JSON.stringify({ user, token, userType }));
+        localStorage.setItem("token", token);
 
-    if (success && token) {
-      // ✅ Store both full info and token separately
-      localStorage.setItem("userInfo", JSON.stringify({ user, token, userType }));
-      localStorage.setItem("token", token); // <-- Added line
+        Swal.fire({
+          icon: "success",
+          title: "Login Successful",
+          text: message || "Welcome back!",
+        });
 
-      // ✅ Success alert
-      Swal.fire({
-        icon: "success",
-        title: "Login Successful",
-        text: message || "Welcome back!",
-      });
-
-      // ✅ Redirect based on user type
-      if (userType === "admin") {
-        navigate("/adminDashboard");
+        if (userType === "admin") {
+          navigate("/adminDashboard");
+        } else {
+          navigate("/userDashboard");
+        }
       } else {
-        navigate("/userDashboard");
+        Swal.fire({
+          icon: "error",
+          title: "Login Failed",
+          text: message || "Invalid credentials",
+        });
       }
-    } else {
+    } catch (err) {
       Swal.fire({
         icon: "error",
-        title: "Login Failed",
-        text: message || "Invalid credentials",
+        title: "Server Error",
+        text: err.response?.data?.message || "Something went wrong!",
       });
+      console.error("Login Error:", err);
     }
-  } catch (err) {
-    Swal.fire({
-      icon: "error",
-      title: "Server Error",
-      text: err.response?.data?.message || "Something went wrong!",
-    });
-
-    const {
-        register,
-        handleSubmit,
-        formState: { errors }, 
-    } = useForm({
-        resolver: yupResolver(schema),
-    });
-
-    const handleLogic = async (data, e) => {
-        e.preventDefault();
-        try {
-            const result = await axios.post("http://localhost:8000/api/login", data);
-            if (result.data.success) {
-                Swal.fire({
-                    icon: "success",
-                    title: "Login Successfully",
-                    text: result.data.message,
-                });
-            } else {
-                Swal.fire({
-                    icon: "error",
-                    title: "Login Failed",
-                    text: result.data.message,
-                });
-            }
-        } catch (err) {
-            Swal.fire({
-                icon: "error",
-                title: "Server Error",
-                text: err.response?.data?.message || "Something went wrong!",
-            });
-            console.error("Login Error:", err);
-        }
-        
-    };
-
-
-    return (
-        <>
-
-            <div className="div-about">
-                <Navbar />
-                <div className="container-fluid mt-1">
-                    <h1 className="about-heading">Already Member</h1>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-sm-6">
-                    <img src="login img.png" className="login-img" alt="login" />
-                </div>
-                <div className="col-sm-6">
-
-                    <h2 className="login-text home2-para">
-                        <strong>ENTER DETAILS TO LOGIN</strong>
-                        <br />
-                    </h2>
-
-                    <div className="row">
-
-                        <div className="col-sm-10">
-
-                            <form onSubmit={handleSubmit(handleLogic)}>
-
-                                <input
-                                    type="email"
-                                    {...register("user_email")}
-                                    placeholder="Enter Your Email"
-                                    className="form-control user-name"
-                                />
-                                {errors.user_email && (
-                                    <p className="text-danger">{errors.user_email.message}</p>
-                                )}
-
-                                <input
-                                    type="password"
-                                    {...register("user_password")}
-                                    placeholder="Enter Your Password"
-                                    className="form-control user-name"
-                                />
-                                {errors.user_password && (
-                                    <p className="text-danger">{errors.user_password.message}</p>
-                                )}
-
-                                <input
-                                    type="submit"
-                                    className="m-2 btn btn-warning"
-                                />
-                            </form>
-                            <div className="col-sm-2">
-                                <p className="text-warning">not a member</p>
-                                <Link className="nav-link" to="/register">
-                                    <strong className="text-warning">Register</strong>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="col-sm-4"></div>
-        </>
-    );
-    console.error("Login Error:", err);
-  }
-};
+  };
 
   return (
     <>
-      <div className="div-about" >
+      {/* Navbar */}
+      <div className="div-about">
         <Navbar />
         <div className="container-fluid mt-1">
           <h1 className="about-heading">Already Member</h1>
         </div>
       </div>
 
-      <div className="row">
+      {/* Main Content */}
+      <div className="container-fluid py-4" style={{ backgroundColor: "#f8f9fa" }}>
+        <div className="row justify-content-center align-items-center">
 
-        <div className="col-sm-1"></div>
+          {/* Left Image */}
+          <div className="col-lg-5 mb-4 mb-lg-0">
+            <img src="login img.png" className="login-img shadow-lg" alt="login" />
+          </div>
 
-        <div className="col-sm-5">
-          <img src="login img.png" className="login-img" alt="login" />
-        </div>
-
-        <div className="col-sm-5">
-
-          <h2 className="login-text home2-para">
-            <strong>ENTER DETAILS TO LOGIN</strong>
-            <br />
-          </h2>
-
-          <div className="row">
-
-            <div className="col-sm-10">
+          {/* Right Form */}
+          <div className="col-lg-5">
+            <div className="card p-4 shadow-sm border-0">
+              <h3 className="mb-4 text-center text-dark fw-bold">Enter Details to Login</h3>
 
               <form onSubmit={handleSubmit(handleLogic)}>
+                {/* Email */}
+                <div className="mb-3">
+                  <input
+                    type="email"
+                    {...register("user_email")}
+                    placeholder="Enter Your Email"
+                    className={`form-control ${errors.user_email ? "is-invalid" : ""}`}
+                  />
+                  <div className="invalid-feedback">{errors.user_email?.message}</div>
+                </div>
 
-                <input
-                  type="email"
-                  {...register("user_email")}
-                  placeholder="Enter Your Email"
-                  className="form-control user-name"
-                />
-                {errors.user_email && (
-                  <p className="text-danger">{errors.user_email.message}</p>
-                )}
+                {/* Password */}
+                <div className="mb-3">
+                  <input
+                    type="password"
+                    {...register("user_password")}
+                    placeholder="Enter Your Password"
+                    className={`form-control ${errors.user_password ? "is-invalid" : ""}`}
+                  />
+                  <div className="invalid-feedback">{errors.user_password?.message}</div>
+                </div>
 
-                <input
-                  type="password"
-                  {...register("user_password")}
-                  placeholder="Enter Your Password"
-                  className="form-control user-name"
-                />
-                {errors.user_password && (
-                  <p className="text-danger">{errors.user_password.message}</p>
-                )}
-
-                <input
-                  type="submit"
-                  className="m-2 btn btn-warning"
-                />
+                {/* Submit Button */}
+                <div className="d-grid">
+                  <button type="submit" className="btn register-btn">
+                    Login
+                  </button>
+                </div>
               </form>
 
-              <div>
-                <p>Not A Member</p>
-                <Link className="nav-link" to="/register">
-                  <strong>Register</strong>
+              {/* Link to Register */}
+              <div className="text-center mt-3">
+                <p className="mb-0">Not a member?</p>
+                <Link to="/register" className="fw-bold text-decoration-none login-btn">
+                  Register Here
                 </Link>
               </div>
             </div>
-            <div className="col-sm-2"></div>
           </div>
+
         </div>
-
-        <div className="col-sm-1"></div>
-
       </div>
 
-      <div>
-        <Footer />
-      </div>
-
+      {/* Footer */}
+      <Footer />
     </>
-  )
+  );
 };
 
 export default Login;

@@ -77,39 +77,19 @@ body {
 }
 
 .about-img1 img {
-  margin-left: -200px;
-  width: 940px;
-  height: 799px;
+  /* margin-left: -200px; */
+  /* width: 940px; */
+  /* height: 799px; */
+  margin: 0px;
+  margin-top: 25px;
 }
 
 .about-img2 img {
-  height: 387px;
-  width: 357px;
+  /* height: 387px; */
+  /* width: 357px; */
+  margin: 0px;
   margin-left: -3px;
-}
-
-.about-img3 img {
-  height: 387px;
-  width: 357px;
-  margin-top: 24px;
-}
-
-.about-img4 img {
-  height: 387px;
-  width: 347px;
-  margin-left: -3px;
-}
-
-.about-img5 img {
-  height: 387px;
-  width: 347px;
-  margin-top: 24px;
-}
-
-.about-img6 img {
-  width: 533px;
-  height: 620px;
-  margin-left: 144px;
+  margin-top: 25px;
 }
 
 .qutaion {
@@ -364,12 +344,13 @@ body {
 
 .footer-hero {
   background: url('section_bg01.png');
-  height: 700px;
+  height: 600px;
   /* background-position: center; */
   /* background-size:cover; */
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  /* padding: 20px; */
 }
 
 .footer-title {
@@ -702,10 +683,10 @@ body {
 /* Trainer  */
 
 .Trainer {
-     margin-left: 304px;
-    margin-top: 183px !important;
-    width: 192px;
-    height: 67px;
+  margin-left: 304px;
+  margin-top: 183px !important;
+  width: 192px;
+  height: 67px;
 
 }
 
@@ -717,68 +698,80 @@ body {
 
 .schedule-list h5 {
   margin-top: 207px;
-    margin-left: 620px;
-    color: red;
-    font-size: 21px;
-    font-weight: 400;
-}.schedule-list h2{
-    margin-top: 36px;
-    margin-left: 454px;
-    color: rgb(16, 16, 71);
-    font-weight: bold;
-    font-size: 44px;
-}.schedule-list h3{
- margin-top: 6px;
-    margin-left: 96px;
-    color: rgb(16, 16, 71);
-    font-weight: bold;
-    font-size: 44px;
-}.admin-nav{
+  margin-left: 620px;
+  color: red;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.schedule-list h2 {
+  margin-top: 36px;
+  margin-left: 454px;
+  color: rgb(16, 16, 71);
+  font-weight: bold;
+  font-size: 44px;
+}
+
+.schedule-list h3 {
+  margin-top: 6px;
+  margin-left: 96px;
+  color: rgb(16, 16, 71);
+  font-weight: bold;
+  font-size: 44px;
+}
+
+.admin-nav {
   height: 200px;
   width: 3000px;
-  background-color: rgb(0, 0, 0); 
+  background-color: rgb(0, 0, 0);
   margin-left: -289px;
- 
+
 }
 
-.admin-list{
+.admin-list {
 
-       height: 50px;
-    width: 135px;
-    background-color: black;
-    margin-left: -27px;
-    margin-top: 79px;
-    border-radius: 10px;
+  height: 50px;
+  width: 135px;
+  background-color: black;
+  margin-left: -27px;
+  margin-top: 79px;
+  border-radius: 10px;
 }
 
-.list{
-    text-decoration: none;
-    color: white;
-       margin-left: 9px;
-    margin-top: 15px !important ;
-    font-weight: 700;
-    font-size: 22px;
-}.list2{
-text-decoration: none;
-    color:white;
-    margin-left: 9px;
-    margin-top: 15px !important ;
-       font-weight: 700;
-    font-size: 22px;
-}.list3{
-text-decoration: none;
-    color: white;
-    margin-left: 9px;
-    margin-top: 15px !important ;
-         font-weight: 700;
-    font-size: 22px;
-}.list4{
-text-decoration: none;
-    color: white;
-    margin-left: 9px;
-    margin-top: 15px !important ;
-       font-weight: 700;
-    font-size: 22px;
+.list {
+  text-decoration: none;
+  color: white;
+  margin-left: 9px;
+  margin-top: 15px !important;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.list2 {
+  text-decoration: none;
+  color: white;
+  margin-left: 9px;
+  margin-top: 15px !important;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.list3 {
+  text-decoration: none;
+  color: white;
+  margin-left: 9px;
+  margin-top: 15px !important;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.list4 {
+  text-decoration: none;
+  color: white;
+  margin-left: 9px;
+  margin-top: 15px !important;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .list {
@@ -792,10 +785,10 @@ text-decoration: none;
   margin-top: 1px;
 }
 
-.Gym{
-    margin-left: 170px;
-    width: 198px;
-    height: 71px;
+.Gym {
+  margin-left: 170px;
+  width: 198px;
+  height: 71px;
 }
 
 .Gym2 {
@@ -992,61 +985,169 @@ text-decoration: none;
   padding: 18px 36px;
   font-size: 12px;
   font-weight: 600;
-}.admin-logo img{
-  height: 190px !important;
-    width: 207px;
-    margin-left: -147px;
-    margin-top: 10px;
-}.admin-title {
-margin-top: -121px !important;
-    margin-left: 64px !important;
-    color: white;
-    font-weight: bold !important;
-    font-size: 44px;
 }
-.admin-heading h3{
-    font-size: 50px;
-    color: white;
-    margin-left: 203px;
-    margin-top: -381px;
-  
-}.admin-hero{
+
+.admin-logo img {
+  height: 190px !important;
+  width: 207px;
+  margin-left: -147px;
+  margin-top: 10px;
+}
+
+.admin-title {
+  margin-top: -121px !important;
+  margin-left: 64px !important;
+  color: white;
+  font-weight: bold !important;
+  font-size: 44px;
+}
+
+.admin-heading h3 {
+  font-size: 50px;
+  color: white;
+  margin-left: 203px;
+  margin-top: -381px;
+
+}
+
+.admin-hero {
   background-image: url('/public/pngtree-gym-with-many-weights-in-dark-lighting-picture-image_2611113.jpg');
-   height: 680px;
-    width: 1513px;
-}.logout-btn{
- height: 50px;
-    width: 150px;
-    background-color: red;
-    border-radius: 0px;
-    margin-left: 209px;
-    margin-top: 25px;
-}.logout-btn h1{
+  height: 680px;
+  /* width: 1513px; */
+  width: auto;
+}
+
+.logout-btn {
+  height: 50px;
+  width: 150px;
+  background-color: red;
+  border-radius: 0px;
+  margin-left: 209px;
+  margin-top: 25px;
+}
+
+.logout-btn h1 {
   color: white;
   font-size: 22px;
-}.admin-heading h2{
-color: white;
-    font-size: 19px;
-    margin-left: 210px;
-    margin-top: 29px;
-    color: white;
-    font-size: 19px;
-}.admindash{
-    color: white;
-    margin-left: 203px;
-    margin-top: 30px;
-}.admin-para{
-    color: white;
-    margin-left: 203px;
-    margin-top: 4px;
-}.manageUser h2{
-            color: black;
-    margin-top: 134px;
-    margin-left: 581px;
-    font-weight: bold;
-    font-size: 46px;
-}.manageUser{
+}
+
+.admin-heading h2 {
+  color: white;
+  font-size: 19px;
+  margin-left: 210px;
+  margin-top: 29px;
+  color: white;
+  font-size: 19px;
+}
+
+.admindash {
+  color: white;
+  margin-left: 203px;
+  margin-top: 30px;
+}
+
+.admin-para {
+  color: white;
+  margin-left: 203px;
+  margin-top: 4px;
+}
+
+.manageUser h2 {
+  color: black;
+  margin-top: 134px;
+  margin-left: 581px;
+  font-weight: bold;
+  font-size: 46px;
+}
+
+.manageUser {
   background-image: url('/public//abstract-blurred-fitness-or-gym-background-free-photo.jpg');
-}.table-user{
+}
+
+.table-user {
   margin-left: 449px;
+}
+
+/* gallery */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(60%);
+}
+
+.gallery-effect:hover {
+  transform: scale(1.05);
+  filter: brightness(60%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+  color: #fff;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.arrow-icon {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.text h3 {
+  font-size: 18px;
+  margin: 5px 0 0;
+  font-weight: bold;
+}
+
+.text p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.login-btn {
+  color: #f44336;
+}
+.register-btn{
+  border: 1px solid #f44336;
+  color: #f44336;
+}
+.register-btn:hover {
+  background-color: #f44336;
+  color:white;
 }
