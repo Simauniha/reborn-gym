@@ -34,14 +34,14 @@ const Profile = () => {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">Your Profile</h2>
-      <div className="space-y-2">
-        <p><strong>Name:</strong> {user.user_name}</p>
-        <p><strong>Email:</strong> {user.user_email}</p>
-        <p><strong>Phone:</strong> {user.user_phone}</p>
-        <p><strong>Age:</strong> {user.user_age}</p>
-        <p><strong>Height:</strong> {user.user_height} cm</p>
-        <p><strong>Weight:</strong> {user.user_weight} kg</p>
+      <h2 className="user-info">Your Profile</h2>
+      <div className="user-detail">
+        <p className="detail-list"><strong>Name:</strong> {user.user_name}</p>
+        <p className="detail-list"><strong>Email:</strong> {user.user_email}</p>
+        <p className="detail-list"><strong>Phone:</strong> {user.user_phone}</p>
+        <p className="detail-list"><strong>Age:</strong> {user.user_age}</p>
+        <p className="detail-list"><strong>Height:</strong> {user.user_height} cm</p>
+        <p className="detail-list"><strong>Weight:</strong> {user.user_weight} kg</p>
         {user.user_profileImage && (
           <div>
             <strong>Profile Image:</strong><br />

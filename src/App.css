@@ -742,6 +742,11 @@ body {
   background-color: rgb(0, 0, 0); 
   margin-left: -289px;
  
+}.user-nav{
+  height: 200px;
+  width: 3000px;
+  background-color: rgb(0, 0, 0); 
+  margin-left: -289px;
 }
 
 .admin-list{
@@ -752,6 +757,34 @@ body {
     margin-left: -27px;
     margin-top: 79px;
     border-radius: 10px;
+}.user-list{
+     height: 50px;
+    width: 135px;
+    background-color: black;
+    margin-left: -27px;
+    margin-top: 79px;
+    border-radius: 10px;
+}.home-list{
+ text-decoration: none;
+    color: white;
+       margin-left: 9px;
+    margin-top: 15px !important ;
+    font-weight: 700;
+    font-size: 22px;
+}.setting-list3{
+   text-decoration: none;
+    color: white;
+       margin-left: -14px;
+    margin-top: 15px !important ;
+    font-weight: 700;
+    font-size: 22px;
+}.profile-list2{
+  text-decoration: none;
+    color: white;
+       margin-left: 9px;
+    margin-top: 15px !important ;
+    font-weight: 700;
+    font-size: 22px;
 }
 
 .list{
@@ -997,6 +1030,12 @@ margin-top: -121px !important;
     color: white;
     font-weight: bold !important;
     font-size: 44px;
+}.user-title{
+  margin-top: -121px !important;
+    margin-left: 64px !important;
+    color: white;
+    font-weight: bold !important;
+    font-size: 44px;
 }
 .admin-heading h3{
     font-size: 50px;
@@ -1004,11 +1043,34 @@ margin-top: -121px !important;
     margin-left: 203px;
     margin-top: -381px;
   
-}.admin-hero{
+}.user-heading h3{
+    font-size: 50px;
+    color: white;
+    margin-left: 63px !important;
+    margin-top: -409px !important;
+}
+.admin-hero{
   background-image: url('/public/pngtree-gym-with-many-weights-in-dark-lighting-picture-image_2611113.jpg');
    height: 680px;
     width: 1513px;
-}.logout-btn{
+}.user-hero{
+    background-image: url('/public/pngtree-gym-with-many-weights-in-dark-lighting-picture-image_2611113.jpg');
+   height: 680px;
+    width: 1513px;
+}.userlogout-btn{
+        height: 53px;
+    width: 147px;
+    background-color: rgb(82, 4, 4);
+    border-radius: 0px;
+    margin-left: 691px;
+    margin-top: 323px !important;
+   
+}
+.userlogout-btn h1{
+   color: white;
+  font-size: 22px;
+}
+.logout-btn{
  height: 50px;
     width: 150px;
     background-color: red;
@@ -1029,6 +1091,15 @@ color: white;
     color: white;
     margin-left: 203px;
     margin-top: 30px;
+}
+.userdash{
+  color: white;
+    margin-left: 69px;
+    margin-top: 6px;
+}.user-para{
+color: white;
+    margin-left: 70px;
+    margin-top: 9px;
 }.admin-para{
     color: white;
     margin-left: 203px;
@@ -1043,4 +1114,22 @@ color: white;
   background-image: url('/public//abstract-blurred-fitness-or-gym-background-free-photo.jpg');
 }.table-user{
   margin-left: 449px;
+}.user-info{
+      height: 60px;
+    width: 190px;
+    margin-left: 72px;
+    margin-top: 8px;
+    font-size: 32px;
+    font-weight: bold;
+}.user-detail{
+       height: 331px;
+    width: 255px;
+    background-color: #00000000;
+    margin-left: 73px;
+}.detail-list{
+      height: 40px;
+    width: 228px;
+    background-color:  rgb(82, 4, 4);
+    margin-left: 10px;
+    margin-top: 8px;
 }
