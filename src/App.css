@@ -655,8 +655,8 @@ body {
 /* Date badge styling */
 .date-badge {
   position: absolute;
-  bottom: 145px;
-  left: 30px;
+  bottom: 120px;
+  left: 23px;
   background-color: #f44336;
   color: #fff;
   padding: 8px 10px;
@@ -698,11 +698,8 @@ body {
 /* Remove image hover effects */
 .blog-post .card-img-top:hover {
   transform: none;
-  height: 100px !important;
-  width: 144px;
-  margin-left: -168px !important;
-  margin-top: -136px !important;
 }
+
 /* Trainer  */
 
 .Trainer {
@@ -719,66 +716,77 @@ body {
 
 .schedule-list h5 {
   margin-top: 207px;
-    margin-left: 620px;
-    color: red;
-    font-size: 21px;
-    font-weight: 400;
-}.schedule-list h2{
-    margin-top: 36px;
-    margin-left: 454px;
-    color: rgb(16, 16, 71);
-    font-weight: bold;
-    font-size: 44px;
-}.schedule-list h3{
- margin-top: 6px;
-    margin-left: 96px;
-    color: rgb(16, 16, 71);
-    font-weight: bold;
-    font-size: 44px;
-}.admin h2{
- margin-top: 19px;
-    margin-left: -70px;
-    color: rgb(16, 16, 71);
-    font-weight: bold;
-    font-size: 44px;
-}.admin-nav{
+  margin-left: 620px;
+  color: red;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.schedule-list h2 {
+  margin-top: 36px;
+  margin-left: 454px;
+  color: rgb(16, 16, 71);
+  font-weight: bold;
+  font-size: 44px;
+}
+
+.schedule-list h3 {
+  margin-top: 6px;
+  margin-left: 96px;
+  color: rgb(16, 16, 71);
+  font-weight: bold;
+  font-size: 44px;
+}
+
+.admin h2 {
+  margin-top: 19px;
+  margin-left: -70px;
+  color: rgb(16, 16, 71);
+  font-weight: bold;
+  font-size: 44px;
+}
+
+.admin-nav {
   height: 100px;
   width: 3000px;
-  background-color: rgb(241, 234, 234); 
+  background-color: rgb(241, 234, 234);
   margin-left: -289px;
- 
- 
 
-}.admin-list{
 
-   height: 50px;
-    width: 135px;
-    background-color: rgb(16, 16, 71);
-    margin-left: 1px;
-    margin-top: 28px;
+
 }
 
-.list{
-text-decoration: none;
-    color: white;
-    margin-left: 9px;
-    margin-top: 15px !important ;
+.admin-list {
+
+  height: 50px;
+  width: 135px;
+  background-color: rgb(16, 16, 71);
+  margin-left: 1px;
+  margin-top: 28px;
 }
 
-.Aboutgym{
+.list {
+  text-decoration: none;
+  color: white;
+  margin-left: 9px;
+  margin-top: 15px !important;
+}
+
+.Aboutgym {
   margin-top: 1px;
 }
 
-.Gym{
+.Gym {
   margin-left: 170px;
 }
 
 .Gym2 {
-   margin-top: 168px !important;
-    margin-left: 427px;
-    width: 187px;
+  margin-top: 168px !important;
+  margin-left: 427px;
+  width: 187px;
 }
-.services-btn{
+
+.services-btn {
   margin-top: 1px;
 }
 
@@ -939,7 +947,8 @@ text-decoration: none;
 /* Offer Section */
 
 .offer-section {
-  background-color: #022a48; /* Dark navy blue */
+  background-color: #022a48;
+  /* Dark navy blue */
   color: #fff;
   padding: 80px 0;
   margin-top: 50px;
@@ -966,5 +975,3 @@ text-decoration: none;
   font-size: 12px;
   font-weight: 600;
 }
-
-
