@@ -29,27 +29,33 @@ const Profile = () => {
       });
   }, []);
 
-  if (error) return <p className="text-red-500">{error}</p>;
-  if (!user) return <p>Loading your profile...</p>;
+  if (error) return <p className="text-danger text-center mt-4">{error}</p>;
+  if (!user) return <p className="text-center mt-4">Loading your profile...</p>;
 
   return (
-    <div className="p-6">
-      <h2 className="user-info">Your Profile</h2>
-      <div className="user-detail">
-        <p className="detail-list"><strong>Name:</strong> {user.user_name}</p>
-        <p className="detail-list"><strong>Email:</strong> {user.user_email}</p>
-        <p className="detail-list"><strong>Phone:</strong> {user.user_phone}</p>
-        <p className="detail-list"><strong>Age:</strong> {user.user_age}</p>
-        <p className="detail-list"><strong>Height:</strong> {user.user_height} cm</p>
-        <p className="detail-list"><strong>Weight:</strong> {user.user_weight} kg</p>
+    <div className="container-fluid py-5">
+      <h2 className="user-info" style={{ color: "#ffffff" }}>Your Profile</h2>
+
+      {/* <div className="user-detail p-3 rounded shadow-sm" style={{ backgroundColor: "#ffffff" }}> */}
+      <div className="user-detail p-3 rounded shadow-sm">
+        <p className="detail-list text-white p-2 rounded"><strong>Name:</strong> {user.user_name}</p>
+        <p className="detail-list text-white p-2 rounded"><strong>Email:</strong> {user.user_email}</p>
+        <p className="detail-list text-white p-2 rounded"><strong>Phone:</strong> {user.user_phone}</p>
+        <p className="detail-list text-white p-2 rounded"><strong>Age:</strong> {user.user_age}</p>
+        <p className="detail-list text-white p-2 rounded"><strong>Height:</strong> {user.user_height} cm</p>
+        <p className="detail-list text-white p-2 rounded"><strong>Weight:</strong> {user.user_weight} kg</p>
+
         {user.user_profileImage && (
-          <div>
-            <strong>Profile Image:</strong><br />
-            <img
-              src={`http://localhost:8000/uploads/${user.user_profileImage}`}
-              alt="Profile"
-              className="w-32 h-32 rounded-full border mt-2"
-            />
+          <div className="mt-3 text-center">
+            <strong>Profile Image:</strong>
+            <div className="mt-2">
+              <img
+                src={`http://localhost:8000/uploads/${user.user_profileImage}`}
+                alt="Profile"
+                className="rounded-circle border"
+                style={{ width: "120px", height: "120px", objectFit: "cover" }}
+              />
+            </div>
           </div>
         )}
       </div>

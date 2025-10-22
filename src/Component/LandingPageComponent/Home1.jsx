@@ -6,7 +6,7 @@ import HoverImage from './HoverImage'
 import Trainer from "./Trainer";
 import Schedulelist from "./Schedulelist";
 import Membership from "./Membership";
-import Servicehome from "./servicehome"
+import Servicehome from "./Servicehome"
 const Home1 = () => {
   return (
     <>
