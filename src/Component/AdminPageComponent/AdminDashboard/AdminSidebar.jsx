@@ -6,15 +6,26 @@ const AdminSidebar = () => {
   const active = (path) => location.pathname === path ? "bg-blue-600 text-white" : "text-gray-700";
 
   return (
-    <div className="w-64 h-screen bg-white shadow-lg p-4 flex flex-col">
-      <h2 className="text-2xl font-bold mb-6 text-blue-600">Admin Panel</h2>
-      <nav className="flex flex-col gap-3">
-        <Link to="/adminDashboard" className={`p-2 rounded ${active("/adminDashboard")}`}>🏠 Dashboard</Link>
-        <Link to="/adminDashboard/users" className={`p-2 rounded ${active("/adminDashboard/users")}`}>👥 Manage Users</Link>
-        <Link to="/adminDashboard/reports" className={`p-2 rounded ${active("/adminDashboard/reports")}`}>📊 Reports</Link>
-        <Link to="/adminDashboard/settings" className={`p-2 rounded ${active("/adminDashboard/settings")}`}>⚙️ Settings</Link>
-      </nav>
+    <>
+    <nav className=" admin-nav flex flex-col gap-3">
+      <div className="row">
+        <div className="col-sm-2"></div>
+    <div className="admin  col-sm-4">
+          
+      <h2 className=" "><strong>Admin Panel</strong></h2></div>
+        <div className="col-sm-4">
+        <ul className=" admin-nav list-unstyled d-flex gap-3">
+
+       <li className="admin-list"> <Link to="/adminDashboard" className="list">Dashboard</Link></li>
+       <li className="admin-list"> <Link to="/adminDashboard/users" className="list2">Manage Users</Link></li>
+     <li className="admin-list">  <Link to="/adminDashboard/reports" className="list3">Reports</Link></li> 
+     <li className="admin-list"> <Link to="/adminDashboard/settings" className="list4"> Settings</Link></li>  </ul>
+     
     </div>
+     <div className="col-sm-2"></div>
+     </div>
+     </nav>
+    </>
   );
 };
 
