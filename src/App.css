@@ -719,6 +719,59 @@ body {
 
 .schedule-list h5 {
   margin-top: 207px;
+    margin-left: 620px;
+    color: red;
+    font-size: 21px;
+    font-weight: 400;
+}.schedule-list h2{
+    margin-top: 36px;
+    margin-left: 454px;
+    color: rgb(16, 16, 71);
+    font-weight: bold;
+    font-size: 44px;
+}.schedule-list h3{
+ margin-top: 6px;
+    margin-left: 96px;
+    color: rgb(16, 16, 71);
+    font-weight: bold;
+    font-size: 44px;
+}.admin h2{
+ margin-top: 19px;
+    margin-left: -70px;
+    color: rgb(16, 16, 71);
+    font-weight: bold;
+    font-size: 44px;
+}.admin-nav{
+  height: 100px;
+  width: 3000px;
+  background-color: rgb(241, 234, 234); 
+  margin-left: -289px;
+ 
+ 
+
+}.admin-list{
+
+   height: 50px;
+    width: 135px;
+    background-color: rgb(16, 16, 71);
+    margin-left: 1px;
+    margin-top: 28px;
+}.list{
+text-decoration: none;
+    color: white;
+    margin-left: 9px;
+    margin-top: 15px !important ;
+}.Aboutgym{
+  margin-top: 1px;
+}.Gym{
+  margin-left: 170px;
+}.Gym2 {
+   margin-top: 168px !important;
+    margin-left: 427px;
+    width: 187px;
+}.services-btn{
+  margin-top: 1px;
+}
   margin-left: 620px;
   color: red;
   font-size: 21px;

@@ -54,7 +54,9 @@ function Services() {
                     </h1></div>
                 <div className="col-sm-4">
                     <div className="btn-wrapper">
-                        <button className="btn-custom">MORE SERVICES</button>
+                       <button className="Gym2 btn nav-last-hover-button  hover-button mt-5">
+              <p className="btn-text services-btn">MORE SERVICES</p>
+            </button>
                     </div></div>
                 <div className="col-sm-2"></div>
 
