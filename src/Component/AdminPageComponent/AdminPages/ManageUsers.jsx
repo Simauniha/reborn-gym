@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Adminfooter from "./Adminfooter";
 
 const ManageUsers = () => {
   const [users, setUsers] = useState([]);
@@ -18,9 +19,13 @@ const ManageUsers = () => {
   }, []);
 
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">Manage Users</h2>
-      <table className="min-w-full border border-gray-300 text-left">
+    <>
+
+    <div className="row">
+      <div className=" manageUser col-sm-12">
+    
+      <h2 className=""><strong>Manage Users</strong></h2>
+      <table className=" mt-5 min-w-full border border-gray-300 text-left table-user">
         <thead className="bg-gray-200">
           <tr>
             <th className="p-2 border">Sr No.</th>
@@ -34,6 +39,7 @@ const ManageUsers = () => {
           </tr>
         </thead>
         <tbody>
+         
           {users.map((u, index) => (
             <tr key={u._id || index} className="hover:bg-gray-100">
               <td className="p-2 border text-center">{index + 1}</td>
@@ -56,6 +62,9 @@ const ManageUsers = () => {
         </tbody>
       </table>
     </div>
+     </div>
+    <Adminfooter/>
+</>
   );
 };
 

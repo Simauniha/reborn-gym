@@ -1,11 +1,16 @@
 import React from "react";
 
+import footer from "./Adminfooter"
+import Adminfooter from "./Adminfooter";
 const AdminHome = () => {
   return (
+    <>
     <div>
-      <h2 className="text-2xl font-bold mb-4">Admin Dashboard</h2>
-      <p className="text-gray-700">Overview of user activity, system stats, or quick analytics here.</p>
+      <h2 className="admindash">Admin Dashboard</h2>
+      <p className="admin-para">Overview of user activity, system stats, or quick analytics here.</p>
     </div>
+    <Adminfooter/>
+    </>
   );
 };
 
