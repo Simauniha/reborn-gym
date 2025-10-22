@@ -2,7 +2,7 @@ body {
   overflow-x: hidden !important;
 }
 
-/*About css*/
+/About css/
 
 .about-heading {
   background-color: black;
@@ -204,7 +204,7 @@ body {
 }
 
 
-/*sevice css*/
+/sevice css/
 
 .service-heading {
   background-color: black;
@@ -285,7 +285,7 @@ body {
 }
 
 
-/*Schedule css*/
+/Schedule css/
 
 .days-nav {
   background: #f4fbff;
@@ -360,7 +360,7 @@ body {
 }
 
 
-/*footer css*/
+/footer css/
 
 .footer-hero {
   background: url('section_bg01.png');
@@ -624,7 +624,7 @@ body {
   color: #fff;
 }
 
-/*Gallery Css*/
+/Gallery Css/
 
 .qutaion-img {
   height: 100px !important;
@@ -756,28 +756,30 @@ body {
     background-color: rgb(16, 16, 71);
     margin-left: 1px;
     margin-top: 28px;
-}.list{
+}
+
+.list{
 text-decoration: none;
     color: white;
     margin-left: 9px;
     margin-top: 15px !important ;
-}.Aboutgym{
+}
+
+.Aboutgym{
   margin-top: 1px;
-}.Gym{
+}
+
+.Gym{
   margin-left: 170px;
-}.Gym2 {
+}
+
+.Gym2 {
    margin-top: 168px !important;
     margin-left: 427px;
     width: 187px;
-}.services-btn{
-  margin-top: 1px;
 }
-<<<<<<< HEAD
-=======
-  margin-left: 620px;
-  color: red;
-  font-size: 21px;
-  font-weight: 400;
+.services-btn{
+  margin-top: 1px;
 }
 
 .schedule-list h2 {
@@ -964,5 +966,3 @@ text-decoration: none;
   font-size: 12px;
   font-weight: 600;
 }
-
->>>>>>> 6846dfb551add7fa577a0b63177f6d9700c4a620
