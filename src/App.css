@@ -756,26 +756,31 @@ body {
     background-color: rgb(16, 16, 71);
     margin-left: 1px;
     margin-top: 28px;
-}.list{
+}
+
+.list{
 text-decoration: none;
     color: white;
     margin-left: 9px;
     margin-top: 15px !important ;
-}.Aboutgym{
+}
+
+.Aboutgym{
   margin-top: 1px;
-}.Gym{
+}
+
+.Gym{
   margin-left: 170px;
-}.Gym2 {
+}
+
+.Gym2 {
    margin-top: 168px !important;
     margin-left: 427px;
     width: 187px;
-}.services-btn{
-  margin-top: 1px;
 }
-  margin-left: 620px;
-  color: red;
-  font-size: 21px;
-  font-weight: 400;
+
+.services-btn{
+  margin-top: 1px;
 }
 
 .schedule-list h2 {
