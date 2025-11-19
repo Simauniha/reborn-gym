@@ -29,7 +29,7 @@ body {
 .about-head {
   margin-top: 100px;
   margin-left: 170px;
-  color: red;
+  color: #f44336;
   font-size: 25px;
   font-weight: lighter;
 }
@@ -61,8 +61,8 @@ body {
   margin-top: 50px;
   overflow: hidden;
   color: white;
-  border-color: red;
-  background-color: red;
+  border-color: #f44336;
+  background-color: #f44336;
   font-size: 15px;
   font-weight: lighter;
 }
@@ -95,7 +95,7 @@ body {
 .hero-section {
   margin-top: 209px;
   margin-left: 33px;
-  color: red;
+  color: #f44336;
   font-size: 25px;
   font-weight: lighter;
 }
@@ -129,7 +129,7 @@ body {
 .section-title h5 {
   margin-top: 90px;
   margin-left: 32px;
-  color: red;
+  color: #f44336;
   font-size: 25px;
   font-weight: 200;
 }
@@ -155,12 +155,12 @@ body {
 }
 
 .trainer-subTitle {
-  color: #ff3b3b;
+  color: #f44336;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1.2px;
   margin-bottom: 8px;
-  border-left: 2px solid #ff3b3b;
+  border-left: 2px solid #f44336;
   padding-left: 8px;
   display: inline-block;
 }
@@ -220,7 +220,7 @@ body {
 
 .trainer-redOverlay.active {
   transform: translateY(0);
-  background: #ff3b3b;
+  background: #f44336;
   /* transition: transform 0.35s ease; */
   transition: opacity 0.3s cubic-bezier(.17, .84, .44, 1);
 }
@@ -291,10 +291,10 @@ body {
   background-attachment: fixed;
 }
 
-.service-heading p{
+.service-heading p {
   /* margin-top: 100px; */
   /* margin-left: 170px; */
-  color: red;
+  color: #f44336;
   font-size: 25px;
   /* font-weight: lighter; */
 }
@@ -308,7 +308,7 @@ body {
 .section-subtitle {
   margin-top: 90px;
   /* margin-left: -146px; */
-  color: red;
+  color: #f44336;
   font-size: 25px;
   font-weight: 200;
 }
@@ -325,7 +325,7 @@ body {
 }
 
 .service-title:hover {
-  color: red;
+  color: #f44336
 }
 
 .service-text {
@@ -339,8 +339,8 @@ body {
   height: 50px;
   margin-top: 237px;
   color: white;
-  border-color: red;
-  background-color: red;
+  border-color: #f44336;
+  background-color: #f44336;
   font-size: 15px;
   font-weight: lighter;
   float: right;
@@ -370,26 +370,7 @@ body {
 }
 
 .service-icon:hover {
-  color: red;
-}
-
-.days-nav {
-  background: #f4fbff;
-  text-align: center;
-}
-
-.days-nav .nav-link {
-  font-weight: 700;
-  color: #16163f;
-  font-size: 1.1rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
-}
-
-.days-nav .nav-link.active {
-  background: #ff1d1d;
-  color: #fff !important;
-  border-radius: 0;
+  color: #f44336
 }
 
 /* Schedule Cards */
@@ -645,7 +626,7 @@ body {
 .days-nav .nav-link.active {
   background: #ff1d1d;
   color: #fff !important;
-  border-radius: 0;
+  border-radius: 20px;
 }
 
 /* Schedule Css */
@@ -798,7 +779,7 @@ body {
 }
 
 .schedule-list h5 {
-  color: red;
+  color: #f44336;
   font-size: 21px;
   font-weight: 400;
 }
@@ -1068,7 +1049,6 @@ body {
 
 .offer-section {
   background-color: #022a48;
-  /* Dark navy blue */
   color: #fff;
   padding: 80px 0;
   margin-top: 50px;
@@ -1188,7 +1168,7 @@ body {
 .logout-btn {
   height: 50px;
   width: 150px;
-  background-color: red;
+  background-color: #f44336;
   border-radius: 0px;
   margin-left: 209px;
   margin-top: 25px;
@@ -1324,7 +1304,7 @@ body {
 }
 
 .arrow-icon {
-  background-color: red;
+  background-color: #f44336;
   color: white;
   font-size: 20px;
   padding: 10px;
@@ -1357,3 +1337,4 @@ body {
   background-color: #f44336;
   color: white;
 }
+
