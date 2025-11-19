@@ -32,7 +32,7 @@ function GalleryImage() {
 
     return (
         <>
-            <div className="row ">
+            <div className="row mt-5">
                 <div className="col-sm-6 gallery-container">
                     <div className="about-img1 gallery-item">
                         <HoverImage src="/images/gallery1.png" alt="" />
@@ -46,7 +46,7 @@ function GalleryImage() {
                     </div>
                 </div>
 
-                <div className="col-sm-6 galley-container" style={{paddingTop:"20px"}}>
+                <div className="col-sm-6 galley-container2">
                     <div className="row">
                         <div className="col-sm-6">
                             <div className="about-img2 gallery-item">

@@ -46,39 +46,47 @@ function Services() {
                     <h1 className="about-heading">Our Services</h1>
                 </div>
             </div>
+
             <div className="row">
                 <div className="col-sm-2"></div>
-                <div className="col-sm-4"> <p className="section-subtitle">OUR SERVICES FOR YOU</p>
-                    <h1 className="section-title">
-                        PUSH YOUR LIMITS FORWARD <br /> WE OFFER TO YOU
-                    </h1></div>
-                <div className="col-sm-4">
-                    <div className="btn-wrapper">
-                       <button className="Gym2 btn nav-last-hover-button  hover-button mt-5">
-              <p className="btn-text services-btn">MORE SERVICES</p>
-            </button>
-                    </div></div>
-                <div className="col-sm-2"></div>
-
-
-
-                <div className="row mt-5">
-                    {services.map((service, index) => (
-                        <div className="col-sm-4 mb-4" key={index}>
-                            <div className="service-card">
-                                <div className="row d-flex align-items-center justify-content-center py-3">
-                                    {service.icon}
-                                </div>
-                                <h5 className="service-title">{service.title}</h5>
-                                <p className="service-text">{service.text}</p>
-                            </div>
+                <div className="col-sm-8">
+                    <div className="d-flex">
+                        <div className="service-heading mt-3">
+                            <p className="mt-3">OUR SERVICES FOR YOU</p>
+                            <h1 className="heading2">
+                                PUSH YOUR LIMITS FORWARD <br /> WE OFFER TO YOU
+                            </h1>
                         </div>
 
-                    ))}
+                        <div className="btn-wrapper">
+                            <button className="Gym btn nav-last-hover-button  hover-button mt-5" style={{ marginLeft: "515px" }}>
+                                <p className="btn-text services-btn">MORE SERVICES</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="row mt-5">
+                        {services.map((service, index) => (
+                            <div className="col-md-4 mb-4" key={index}>
+                                <div className="service-card h-100 text-center p-3">
+                                    <div className="icon-wrapper mb-3">
+                                        {service.icon}
+                                    </div>
+
+                                    <h5 className="service-title">{service.title}</h5>
+                                    <p className="service-text">{service.text}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+
                 </div>
+                <div className="col-sm-2"></div>
             </div>
             <Footer></Footer>
-        </>)
+        </>
+    )
 }
 
 

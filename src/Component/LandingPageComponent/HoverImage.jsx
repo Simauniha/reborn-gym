@@ -6,7 +6,7 @@ function HoverImage({ src, alt, className }) {
     <motion.img
       src={src}
       alt={alt}
-      whileHover={{ scale: 1.02 }}  // subtle zoom
+      whileHover={{ scale: 1.02, boxShadow: "0px 5px 15px rgba(0,0,0,0.3)" }}
       transition={{ duration: 0.3 }}
     />
   )

@@ -13,15 +13,16 @@ const Home1 = () => {
 
       <AboutGym />
 
-      <GalleryImage />
+      <Servicehome/>
 
       <Feedback />
 
-      <Membership/>
+      <GalleryImage />
 
       <Trainer />
-      <Servicehome/>
-      
+
+      <Membership/>
+
       <Schedulelist />
 
       

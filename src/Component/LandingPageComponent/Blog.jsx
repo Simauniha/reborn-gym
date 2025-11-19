@@ -124,7 +124,7 @@ function Blog() {
               <h6 className="fw-bold mb-3 recent-title">Recent Posts</h6>
               <div className="recent-posts-list">
                 {recentPosts.map((post, i) => (
-                  <div key={i} className="d-flex mb-3 recent-post align-items-start">
+                  <div key={i} className="d-flex mb-3 recent-post">
                     <img
                       src={post.img}
                       alt="Post"

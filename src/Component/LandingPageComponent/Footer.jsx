@@ -99,27 +99,27 @@ const Footer = () => {
 
           <div>
             <div className="footer-logo">
-           
-              <h1 className="footer-head">FITNESS</h1>
-            
-            <p className="para">
-              The trade war currently ensuing between the US and several nations
-              around the globe, most fiercely with...
-            </p>
-            </div>
-            <div className="footer-icon d-flex">
-              <FaFacebook  />
-             <FaInstagram />
-             <BsBrowserEdge />
-             <FaLinkedin />
+
+              <h1 className="footer-head">REBORN GYM</h1>
+
+              <p className="para">
+                The trade war currently ensuing between the US and several nations
+                around the globe, most fiercely with...
+              </p>
+              <div className="footer-icon d-flex">
+                <FaFacebook />
+                <FaInstagram />
+                <BsBrowserEdge />
+                <FaLinkedin />
+              </div>
             </div>
           </div>
         </div>
 
         <div className="copyright text-center">
           <small>
-            Copyright ©2025 All rights reserved | This template is made with ❤️
-            by <span className="text-danger">Colorlib</span>
+            Copyright ©2025 All rights reserved | This project is made with ❤️
+            by <span className="text-danger">Omisha</span>
           </small>
         </div>
       </div>

@@ -12,7 +12,7 @@
 
 .nav-last-hover-button {
   text-decoration: none !important;
-height: 60px;
+  height: 60px;
 
   background: #ff1313 !important;
   border-radius: 0px !important;
@@ -165,59 +165,71 @@ height: 60px;
   background-attachment: fixed;
 }
 
-
 .hi {
-
-   
-   animation-delay: 0.4s;
+  animation-delay: 0.4s;
   color: white;
   font-size: 65px;
- 
   margin-left: 138px;
   margin-top: 272px;
-}.fitness{
+}
+
+.fitness {
   font-size: 45px;
   margin-top: -115px;
-  margin-left:  150px;
-}.home2-para{
-  font-size: 30px;
-  color: rgb(44, 35, 77);
-   text-align: center;
-     font-weight: 700;
-     margin-top: 20px;
-      
-}.home2-para2{
+  margin-left: 150px;
+}
+
+.home2-para {
   font-size: 30px;
   color: rgb(44, 35, 77);
   text-align: center;
-font-weight: 700;
+  font-weight: 700;
+  margin-top: 20px;
 
-    
-     
-}.home2-h3{
-  
-    color: red;
-      text-align: center;
-        font-size: 15px;
-}.home2-box{
+}
+
+.home2-para2 {
+  font-size: 30px;
+  color: rgb(44, 35, 77);
+  text-align: center;
+  font-weight: 700;
+
+
+
+}
+
+.home2-h3 {
+
+  color: red;
+  text-align: center;
+  font-size: 15px;
+}
+
+.home2-box {
   background-color: aqua;
   height: 500px;
   width: 300px;
-   
-}.home2-box2{
+
+}
+
+.home2-box2 {
   background-color: aqua;
   height: 500px;
   width: 300px;
 
-}.login-img{
+}
+
+.login-img {
   height: 700px;
   width: 700px;
- margin-top: 60px;
- margin-left: 30px;
-}.red-title{
-    margin-top: 90px;
-    margin-left: 216px;
-    color: red;
-    font-size: 25px;
-     font-weight: 200;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.red-title {
+  margin-top: 90px;
+  margin-left: 216px;
+  color: red;
+  font-size: 25px;
+  font-weight: 200;
 }

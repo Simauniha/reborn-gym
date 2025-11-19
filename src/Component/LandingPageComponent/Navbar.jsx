@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-black custom-navbar py-3 px-100">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src="./rebprn.jpg" className="logo" alt="logo" />
+          <img src="./reborn-wbg.png" className="logo" alt="logo" />
           <p className="fitness">FITNESS</p>
                 
         </Link>
