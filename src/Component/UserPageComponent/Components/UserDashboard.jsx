@@ -11,6 +11,8 @@ import Exercise from "../pages/Exercise";
 import DietPlan from "../pages/Diet_Plan";
 import Analysis from "../pages/Analysis";
 import Setting from "../pages/Setting";
+import Notification from "../pages/Notification";
+import Email from "../pages/Email";
 
 function UserDashboard() {
   return (
@@ -30,6 +32,8 @@ function UserDashboard() {
             <Route path="/diet_plan" element={<DietPlan />} />
             <Route path="/analysis" element={<Analysis />} />
             <Route path="/setting" element={<Setting />} />
+            <Route path="/notification" element={<Notification/>} />
+            <Route path="/email" element={<Email/>} />
           </Routes>
 
           <Outlet />

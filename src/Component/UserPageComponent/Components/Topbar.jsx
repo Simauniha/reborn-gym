@@ -27,10 +27,10 @@ export default function Topbar() {
       <div className="topbar-right">
         <ul className="top-icons list-inline">
           <li>
-            <Link to="/notification"><FaEnvelope size={20} color="black"/></Link>
+            <Link to="/userDashboard/email"><FaEnvelope size={20} color="black"/></Link>
           </li>
           <li>
-            <Link to="/notification" className="icon-info"><FaBell size={20} color="black"/></Link>
+            <Link to="/userDashboard/notification" className="icon-info"><FaBell size={20} color="black"/></Link>
           </li>
 
           <li className="dropdown user-dropdown">

@@ -473,7 +473,7 @@
   padding: 28px;
   border-radius: 18px;
   margin-bottom: 30px;
-  box-shadow: 0 0 18px rgba(0,0,0,0.25);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.25);
 }
 
 .exercise-title {
@@ -501,7 +501,7 @@
   border-radius: 16px;
   text-align: center;
   border-left: 6px solid var(--primary-color);
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .exercise-stat h3 {
@@ -528,14 +528,14 @@
   background: #fff;
   padding: 22px;
   border-radius: 18px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: 0.25s ease;
   position: relative;
 }
 
 .exercise-card-adv:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Icon circle */
@@ -597,7 +597,7 @@
   padding: 28px;
   border-radius: 18px;
   margin-bottom: 30px;
-  box-shadow: 0 0 18px rgba(0,0,0,0.25);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.25);
 }
 
 .diet-title {
@@ -624,7 +624,7 @@
   border-radius: 16px;
   text-align: center;
   border-left: 6px solid var(--primary-color);
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .macro-box h3 {
@@ -651,13 +651,13 @@
   background: #fff;
   padding: 22px;
   border-radius: 18px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: 0.25s ease;
 }
 
 .diet-card-adv:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Icon */
@@ -704,6 +704,7 @@
 .start-btn:hover {
   background: var(--secondary-color);
 }
+
 /* ---------------- ANALYSIS PAGE ---------------- */
 
 .analysis-header-card {
@@ -712,7 +713,7 @@
   padding: 28px;
   border-radius: 18px;
   margin-bottom: 30px;
-  box-shadow: 0 0 16px rgba(0,0,0,0.25);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
 }
 
 .analysis-title {
@@ -740,13 +741,13 @@
   border-radius: 18px;
   text-align: center;
   border-left: 6px solid var(--primary-color);
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   transition: 0.25s ease;
 }
 
 .analysis-metric-box:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
 }
 
 .metric-icon {
@@ -777,7 +778,7 @@
   background: #fff;
   padding: 25px;
   border-radius: 18px;
-  box-shadow: 0 0 14px rgba(0,0,0,0.1);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
 }
 
 .chart-card h4 {
@@ -801,7 +802,7 @@
   padding: 25px;
   border-radius: 12px;
   color: var(--white);
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 .settings-title {
@@ -866,6 +867,7 @@ input:focus {
 .save-btn:hover {
   background: #b31515;
 }
+
 /*------------------ HOME PAGE ----------------------*/
 
 .home-container {
@@ -902,7 +904,7 @@ input:focus {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0px 0px 12px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
   transition: 0.3s;
 }
 
@@ -947,7 +949,7 @@ input:focus {
   text-decoration: none;
   color: var(--white);
   font-weight: bold;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   transition: 0.3s;
 }
 
@@ -962,7 +964,7 @@ input:focus {
   padding: 20px;
   border-radius: 12px;
   margin-top: 30px;
-  box-shadow: 0px 0px 12px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
 }
 
 .daily-summary-card ul {
@@ -980,3 +982,40 @@ input:focus {
   font-size: 0.9rem;
   opacity: 0.6;
 }
+
+/*------------------ NOTIFICATION PAGE ----------------------*/
+
+.card {
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-gradient-primary {
+  border: 1px solid black !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-gradient-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(94, 86, 86, 0.4);
+  background-color: var(--dark-gray) !important;
+  color: #fff !important;
+}
+
+.btn-outline-danger {
+  border: 1px solid var(--accent-red);
+  color: var(--accent-red);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-outline-danger:hover {
+  background-color:var(--accent-red);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(210, 27, 27, 0.4);
+}
+/*------------------ EMAIL PAGE ----------------------*/
