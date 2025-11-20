@@ -6,19 +6,20 @@ import AdminHome from "../AdminPages/AdminHome.jsx";
 import ManageUsers from "../AdminPages/ManageUsers.jsx";
 import Reports from "../AdminPages/Reports.jsx";
 import Settings from "../AdminPages/Settings.jsx";
+import "../../../Styles/AdminDashboard.css";
 
 const AdminDashboard = () => {
   const admin = JSON.parse(localStorage.getItem("userInfo"));
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="dashboard-root">
       {/* Sidebar */}
       <AdminSidebar />
 
       {/* Main Section */}
-      <div className="flex-1 flex flex-col">
+      <div className="main-content">
         <AdminTopbar admin={admin} />
-        <div className="p-6 overflow-auto">
+        <div className="content-container">
           <Routes>
             <Route path="/" element={<AdminHome />} />
             <Route path="/users" element={<ManageUsers />} />

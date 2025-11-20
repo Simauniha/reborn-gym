@@ -1,19 +1,60 @@
-import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { FaEnvelope, FaBell, FaUser } from "react-icons/fa";
+import "../../../Styles/UserDashboard.css";
 
+function AdminTopbar({ admin }) {
+  const navigate = useNavigate();
 
-const AdminTopbar = ({ admin }) => {
+  const handleLogout = (e) => {
+    e.preventDefault();
+    localStorage.removeItem("userInfo");
+    navigate("/login");
+  };
+
   return (
-    <>
-     <div className="admin-hero"> </div>
-   <div className="admin-heading">
-      <h3 className=""><strong>Welcome {admin?.user_name || "Admin"}</strong> </h3>
-      <h2 className="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque suscipit in expedita?<br/> Veritatis cupiditate a expedita, totam iusto sunt soluta dolorum modi possimus officiis quaerat consequatur aliquam deserunt eaque sequi. <br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore ipsa accusantium laboriosam?<br/> Mollitia labore consequatur harum odio? Consequatur cum expedita sint aperiam, dolorum ipsum debitis sunt sed vel magnam!</h2>
-      <button className="logout-btn">
-      <h1> Logout</h1> 
-      </button></div>
- 
-    </>
+    <header className="topbar">
+      <div className="topbar-left">
+        <div className="search-box">
+          <input type="text" placeholder="Search" id="search" />
+        </div>
+      </div>
+
+      <div className="topbar-right">
+        <ul className="top-icons list-inline">
+          <li>
+            <Link to="/adminDashboard/email">
+              <FaEnvelope size={20} color="black" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/adminDashboard/notifications" className="icon-info">
+              <FaBell size={20} color="black" />
+            </Link>
+          </li>
+
+          <li className="dropdown user-dropdown">
+            <Link to="#" className="user-icon">
+              <FaUser size={20} color="black" />
+            </Link>
+            <div className="dropdown-menu">
+              <div className="navbar-content">
+                <span>{admin?.name || "Admin"}</span>
+                <p className="text-muted small">{admin?.email || "admin@email.com"}</p>
+                <div className="divider" />
+                <Link to="/adminDashboard" className="btn active view">View Profile</Link>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <button className="log-out" onClick={handleLogout}>
+              Log Out
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
   );
-};
+}
 
 export default AdminTopbar;

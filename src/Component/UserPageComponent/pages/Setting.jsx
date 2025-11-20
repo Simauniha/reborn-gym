@@ -114,15 +114,15 @@ const Setting = () => {
     };
 
     return (
-        <div className="settings-container">
+        <div className="setting-container">
 
             {/* PROFILE UPDATE */}
-            <div className="settings-card">
-                <h2 className="settings-title">Update Profile</h2>
+            <div className="setting-card">
+                <h2 className="setting-title">Update Profile</h2>
 
-                <form onSubmit={handleProfileUpdate} className="settings-form">
+                <form onSubmit={handleProfileUpdate} className="setting-form">
 
-                    <div className="form-group">
+                    <div className="forms-group">
                         <label>Name</label>
                         <input
                             value={profileData.user_name}
@@ -134,7 +134,7 @@ const Setting = () => {
                         />
                     </div>
 
-                    <div className="form-group">
+                    <div className="forms-group">
                         <label>Email</label>
                         <input
                             value={profileData.user_email}
@@ -146,7 +146,7 @@ const Setting = () => {
                         />
                     </div>
 
-                    <div className="form-group">
+                    <div className="forms-group">
                         <label>Phone</label>
                         <input
                             value={profileData.user_phone}
@@ -158,8 +158,8 @@ const Setting = () => {
                         />
                     </div>
 
-                    <div className="form-row">
-                        <div className="form-group small">
+                    <div className="forms-row">
+                        <div className="forms-group small">
                             <label>Age</label>
                             <input
                                 value={profileData.user_age}
@@ -171,7 +171,7 @@ const Setting = () => {
                             />
                         </div>
 
-                        <div className="form-group small">
+                        <div className="forms-group small">
                             <label>Height (cm)</label>
                             <input
                                 value={profileData.user_height}
@@ -186,7 +186,7 @@ const Setting = () => {
                             />
                         </div>
 
-                        <div className="form-group small">
+                        <div className="forms-group small">
                             <label>Weight (kg)</label>
                             <input
                                 value={profileData.user_weight}
@@ -202,7 +202,7 @@ const Setting = () => {
                         </div>
                     </div>
 
-                    <div className="form-group">
+                    <div className="forms-group">
                         <label>Profile Image</label>
                         <input
                             type="file"
@@ -218,16 +218,16 @@ const Setting = () => {
 
 
             {/* PASSWORD UPDATE */}
-            <div className="settings-card">
-                <h2 className="settings-title">Update Password</h2>
+            <div className="setting-card">
+                <h2 className="setting-title">Update Password</h2>
 
-                <form onSubmit={handlePasswordUpdate} className="settings-form">
-                    <div className="form-group">
+                <form onSubmit={handlePasswordUpdate} className="setting-form">
+                    <div className="forms-group">
                         <label>Old Password</label>
                         <input name="oldPassword" type="password" required />
                     </div>
 
-                    <div className="form-group">
+                    <div className="forms-group">
                         <label>New Password</label>
                         <input name="newPassword" type="password" required />
                     </div>

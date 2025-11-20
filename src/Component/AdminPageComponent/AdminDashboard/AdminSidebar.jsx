@@ -1,34 +1,45 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { FaHome, FaUsers } from "react-icons/fa";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { IoSettingsSharp } from "react-icons/io5";
+import "../../../Styles/UserDashboard.css";
+import { Link, useNavigate } from "react-router-dom";
 
-const AdminSidebar = () => {
-  const location = useLocation();
-  const active = (path) => location.pathname === path ? "bg-blue-600 text-white" : "text-gray-700";
+function AdminSidebar() {
+  const navItems = [
+    { to: "", icon: <FaHome />, label: "Home" },
+    { to: "users", icon: <FaUsers />, label: "Edit Users" },
+    { to: "reports", icon: <BsGraphUpArrow />, label: "Reports" },
+    { to: "settings", icon: <IoSettingsSharp />, label: "Settings" },
+  ];
 
   return (
-    <>
-    <nav className=" admin-nav flex flex-col gap-3">
-      <div className="row">
-        <div className="col-sm-2"></div>
-    <div className="admin  col-sm-4">
-      <div  className="admin-logo"><img src="rebprn.jpg"></img></div>
-          
-      <h2 className=" admin-title"><strong>Admin Panel</strong></h2></div>
-        <div className="col-sm-4">
-        <ul className=" admin-nav list-unstyled d-flex gap-5">
+    <aside id="admin-sidebar" className="sidebar-fixed">
+      <div className="sidebar-logo">
+        <NavLink to="/adminDashboard" className="logo-link">
+          <img src="/reborn-wbg.png" alt="reborn" />
+        </NavLink>
+      </div>
 
-       <li className="admin-list"> <Link to="/adminDashboard" className="list">Dashboard</Link></li>
-       <li className="admin-list"> <Link to="/adminDashboard/users" className="list2">Manages</Link></li>
-     <li className="admin-list">  <Link to="/adminDashboard/reports" className="list3">Reports</Link></li> 
-     <li className="admin-list"> <Link to="/adminDashboard/settings" className="list4"> Settings</Link></li>  </ul>
-     
-    </div>
-     <div className="col-sm-2"></div>
-    
-     </div>
-     </nav>
-    </>
+      <nav className="sidebar-nav">
+        <ul>
+          {navItems.map((it) => (
+            <li key={it.to}>
+              <NavLink
+                to={`/adminDashboard/${it.to}`}
+                className={({ isActive }) =>
+                  isActive ? "nav-link2 active" : "nav-link2"
+                }
+              >
+                <span className="nav-icon">{it.icon}</span>
+                <span className="nav-text">{it.label}</span>
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </aside>
   );
-};
+}
 
 export default AdminSidebar;
