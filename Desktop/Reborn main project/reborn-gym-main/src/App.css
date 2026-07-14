@@ -283,7 +283,7 @@ body {
 /* Services Css */
 
 .service-img-conatainer {
-  background: url('section_bg01.png');
+  background: url('/images/hero.jpg');
   height: 800px;
   background-position: center;
   background-size: cover;
@@ -434,7 +434,7 @@ body {
 }
 
 .footer-hero {
-  background: url('section_bg01.png');
+  background-image: url("/images/hero.jpg");
   height: 600px;
   background-repeat: no-repeat;
   background-attachment: fixed;
