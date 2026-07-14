@@ -1,0 +1,93 @@
+import { CiDumbbell } from "react-icons/ci";
+import { FaHandHoldingHeart } from "react-icons/fa";
+import { GiStopwatch } from "react-icons/gi";
+import Navbar from "./Navbar";
+import Footer from "./Footer"
+
+const services = [
+    {
+        icon: <CiDumbbell className="service-icon" style={{ height: 50, width: 100 }} />,
+        title: "QUALITY EQUIPMENT",
+        text: "The sea freight service has grown considerably in recent years. We spend timetting to kn."
+    },
+    {
+        icon: <FaHandHoldingHeart className="service-icon" style={{ height: 50, width: 100 }} />,
+        title: "HEALTH CARING",
+        text: "The sea freight service has grown considerably in recent years. We spend timetting to kn."
+    },
+    {
+        icon: <GiStopwatch className="service-icon" style={{ height: 50, width: 100 }} />,
+        title: "GYM STRATEGIES",
+        text: "The sea freight service has grown considerably in recent years. We spend timetting to kn."
+    },
+    {
+        icon: <FaHandHoldingHeart className="service-icon" style={{ height: 50, width: 100 }} />,
+        title: "HEALTH CARING",
+        text: "The sea freight service has grown considerably in recent years. We spend timetting to kn."
+    },
+    {
+        icon: <GiStopwatch className="service-icon" style={{ height: 50, width: 100 }} />,
+        title: "GYM STRATEGIES",
+        text: "The sea freight service has grown considerably in recent years. We spend timetting to kn."
+    },
+    {
+        icon: <CiDumbbell className="service-icon" style={{ height: 50, width: 100 }} />,
+        title: "QUALITY EQUIPMENT",
+        text: "The sea freight service has grown considerably in recent years. We spend timetting to kn."
+    }
+];
+
+function Services() {
+    return (
+        <>
+            <div className="div-about">
+                <Navbar />
+                <div className="container-fluid mt-1">
+                    <h1 className="about-heading">Our Services</h1>
+                </div>
+            </div>
+
+            <div className="row">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8">
+                    <div className="d-flex">
+                        <div className="service-heading mt-3">
+                            <p className="mt-3">OUR SERVICES FOR YOU</p>
+                            <h1 className="heading2">
+                                PUSH YOUR LIMITS FORWARD <br /> WE OFFER TO YOU
+                            </h1>
+                        </div>
+
+                        <div className="btn-wrapper">
+                            <button className="Gym btn nav-last-hover-button  hover-button mt-5" style={{ marginLeft: "515px" }}>
+                                <p className="btn-text services-btn">MORE SERVICES</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="row mt-5">
+                        {services.map((service, index) => (
+                            <div className="col-md-4 mb-4" key={index}>
+                                <div className="service-card h-100 text-center p-3">
+                                    <div className="icon-wrapper mb-3">
+                                        {service.icon}
+                                    </div>
+
+                                    <h5 className="service-title">{service.title}</h5>
+                                    <p className="service-text">{service.text}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+
+                </div>
+                <div className="col-sm-2"></div>
+            </div>
+            <Footer></Footer>
+        </>
+    )
+}
+
+
+export default Services;
